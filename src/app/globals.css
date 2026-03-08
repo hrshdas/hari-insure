@@ -16,8 +16,8 @@
 
   body {
     font-family: 'Outfit', 'Inter', system-ui, -apple-system, sans-serif;
-    background-color: #f8f8f6;
-    color: #0f172a;
+    background-color: #f5f0e8;
+    color: #0d3d35;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     line-height: 1.6;
@@ -113,21 +113,21 @@
   .heading-display {
     @apply font-bold leading-none;
     font-size: clamp(2.5rem, 5vw, 3.75rem);
-    color: #0f172a;
+    color: #0d3d35;
     letter-spacing: -0.03em;
   }
 
   .heading-lg {
     @apply font-bold;
     font-size: clamp(2rem, 4vw, 3rem);
-    color: #0f172a;
+    color: #0d3d35;
     letter-spacing: -0.025em;
   }
 
   .heading-md {
     @apply font-bold;
     font-size: clamp(1.5rem, 3vw, 2.25rem);
-    color: #0f172a;
+    color: #0d3d35;
     letter-spacing: -0.02em;
   }
 
@@ -191,3 +191,40 @@
    ────────────────────────────────── */
 :focus { outline: none; }
 :focus-visible { outline: 2px solid #16a37f; outline-offset: 3px; }
+
+/* ──────────────────────────────────
+   Marquee / infinite scroll
+   ────────────────────────────────── */
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee 32s linear infinite;
+}
+
+.marquee-track:hover {
+  animation-play-state: paused;
+}
+
+.marquee-wrap {
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black 8%,
+    black 92%,
+    transparent 100%
+  );
+  mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black 8%,
+    black 92%,
+    transparent 100%
+  );
+}
+

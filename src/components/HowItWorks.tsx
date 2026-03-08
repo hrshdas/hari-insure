@@ -44,7 +44,7 @@ const steps = [
 
 export default function HowItWorks() {
   return (
-    <section className="section-wrap bg-white" aria-labelledby="how-heading">
+    <section className="section-wrap bg-brand-beige" aria-labelledby="how-heading">
       <div className="container-max">
 
         {/* Header */}

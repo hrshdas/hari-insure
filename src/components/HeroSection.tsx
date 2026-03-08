@@ -28,7 +28,7 @@ export default function HeroSection() {
             {/* Headline */}
             <h1
               id="hero-heading"
-              className="text-[2.6rem] sm:text-[3.2rem] lg:text-[3.6rem] font-bold tracking-tight leading-[1.1]"
+              className="text-[3rem] sm:text-[3.8rem] lg:text-[4.4rem] font-bold tracking-tight leading-[1.1] font-[family-name:var(--font-nunito)]"
               style={{ color: "#0d3d35" }}
             >
               Secure your<br />

@@ -64,13 +64,13 @@ const trustBadges = [
 
 export default function WhyChooseUs() {
   return (
-    <section className="section-wrap bg-white" id="about" aria-labelledby="why-heading">
+    <section className="section-wrap bg-brand-beige" id="about" aria-labelledby="why-heading">
       <div className="container-max">
 
         {/* Section header */}
         <div className="section-header">
           <span className="eyebrow">Why Hari Insure?</span>
-          <h2 id="why-heading" className="heading-lg text-center">
+          <h2 id="why-heading" className="text-[1.9rem] sm:text-[2.2rem] lg:text-[2.6rem] font-bold text-brand-ink text-center tracking-tight leading-tight whitespace-nowrap">
             Insurance made{" "}
             <span className="text-gradient-green">simple and smart</span>
           </h2>
