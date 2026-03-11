@@ -1,45 +1,39 @@
+import Image from "next/image";
+import Link from "next/link";
+
 const steps = [
   {
     id: "step-1",
-    label: "Enter Your\nDetails",
-    iconColor: "#16a37f",
-    iconBg: "#e8f8f4",
-    icon: (
-      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-        <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7" />
-        <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z" />
-      </svg>
-    ),
-    numColor: "#16a37f",
-    description: "Fill a quick form with your age, health needs, and budget. Takes under 2 minutes.",
+    step: "Step 1",
+    title: "Enter Your Details",
+    desc: "Fill a quick form with your age, health needs, and budget. Takes under 2 minutes.",
+    cta: "Start Now",
+    ctaHref: "#cta",
+    img: "/individual-health-icon.png",
+    gradient: "linear-gradient(135deg, #0d5c50 0%, #16a37f 100%)",
+    ripple: "rgba(255,255,255,0.06)",
   },
   {
     id: "step-2",
-    label: "Compare\nPolicies",
-    iconColor: "#f97316",
-    iconBg: "#fff7ed",
-    icon: (
-      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-        <rect x="3" y="3" width="9" height="9" rx="1" /><rect x="12" y="3" width="9" height="9" rx="1" />
-        <rect x="3" y="12" width="9" height="9" rx="1" /><rect x="12" y="12" width="9" height="9" rx="1" />
-      </svg>
-    ),
-    numColor: "#f97316",
-    description: "Our engine fetches and ranks the best plans tailored to your profile — sorted by value.",
+    step: "Step 2",
+    title: "Compare Policies",
+    desc: "Our engine fetches and ranks the best plans tailored to your profile — sorted by value.",
+    cta: "View Plans",
+    ctaHref: "#plans",
+    img: "/investment-icon.png",
+    gradient: "linear-gradient(135deg, #0a8c6a 0%, #34d399 100%)",
+    ripple: "rgba(255,255,255,0.07)",
   },
   {
     id: "step-3",
-    label: "Get\nInsured",
-    iconColor: "#2563eb",
-    iconBg: "#eff6ff",
-    icon: (
-      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
-        <path d="M9 12l2 2 4-4" />
-      </svg>
-    ),
-    numColor: "#2563eb",
-    description: "Pay securely online and receive your policy document instantly.",
+    step: "Step 3",
+    title: "Get Insured Instantly",
+    desc: "Pay securely online and receive your policy document in your inbox instantly.",
+    cta: "Get a Quote",
+    ctaHref: "#cta",
+    img: "/term-icon.png",
+    gradient: "linear-gradient(135deg, #1d4ed8 0%, #38bdf8 100%)",
+    ripple: "rgba(255,255,255,0.07)",
   },
 ];
 
@@ -48,7 +42,7 @@ export default function HowItWorks() {
     <section className="bg-white py-12 px-4 sm:px-6 lg:px-8" aria-labelledby="how-heading">
       <div className="max-w-5xl mx-auto">
         {/* Header */}
-        <div className="flex flex-col items-center text-center gap-2 mb-8">
+        <div className="flex flex-col items-center text-center gap-2 mb-10">
           <span className="eyebrow">Simple Process</span>
           <h2 id="how-heading" className="heading-lg text-center">
             Insured in{" "}
@@ -59,49 +53,90 @@ export default function HowItWorks() {
           </p>
         </div>
 
-        {/* Steps */}
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
-          {steps.map((step, idx) => (
+        {/* Step Cards */}
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+          {steps.map((step) => (
             <div
               key={step.id}
-              className="group flex flex-col items-center gap-2.5 bg-white rounded-2xl border border-gray-100 p-4 text-center hover:shadow-md hover:-translate-y-1 transition-all duration-200"
-              style={{ boxShadow: "0 1px 8px rgba(0,0,0,0.06)" }}
+              className="relative rounded-2xl overflow-hidden flex flex-col justify-between"
+              style={{
+                background: step.gradient,
+                minHeight: 220,
+                padding: "24px 22px 22px 22px",
+              }}
             >
-              <div className="relative">
-                <div
-                  className="w-14 h-14 rounded-full flex items-center justify-center group-hover:scale-105 transition-transform duration-200"
-                  style={{ backgroundColor: step.iconBg, color: step.iconColor }}
-                >
-                  {step.icon}
-                </div>
+              {/* Ripple circle decoration */}
+              <div
+                className="absolute top-0 right-0 w-40 h-40 rounded-full pointer-events-none"
+                style={{
+                  background: step.ripple,
+                  transform: "translate(30%, -30%)",
+                }}
+              />
+              <div
+                className="absolute bottom-0 left-0 w-28 h-28 rounded-full pointer-events-none"
+                style={{
+                  background: step.ripple,
+                  transform: "translate(-30%, 30%)",
+                }}
+              />
+
+              {/* Top row: step pill + illustration */}
+              <div className="flex items-start justify-between relative z-10">
                 <span
-                  className="absolute -top-1 -right-1 w-5 h-5 rounded-full bg-white border-2 flex items-center justify-center text-[10px] font-bold"
-                  style={{ borderColor: step.numColor, color: step.numColor }}
+                  className="text-[11px] font-bold px-3 py-1 rounded-full"
+                  style={{
+                    background: "rgba(255,255,255,0.2)",
+                    color: "#fff",
+                    backdropFilter: "blur(4px)",
+                    border: "1px solid rgba(255,255,255,0.25)",
+                  }}
                 >
-                  {idx + 1}
+                  {step.step}
                 </span>
+
+                {/* Floating illustration */}
+                <div className="flex-shrink-0 -mt-2 -mr-1">
+                  <Image
+                    src={step.img}
+                    alt={step.title}
+                    width={90}
+                    height={90}
+                    className="object-contain drop-shadow-lg"
+                  />
+                </div>
               </div>
-              <p className="text-[14px] font-semibold text-brand-ink whitespace-pre-line leading-snug">
-                {step.label}
-              </p>
-              <p className="text-[13px] text-brand-muted leading-relaxed">{step.description}</p>
+
+              {/* Text content */}
+              <div className="relative z-10 mt-3 flex flex-col gap-1.5 flex-1">
+                <h3 className="text-white font-bold text-[18px] leading-snug">
+                  {step.title}
+                </h3>
+                <p className="text-white/75 text-[12px] leading-relaxed">
+                  {step.desc}
+                </p>
+              </div>
+
+              {/* CTA button */}
+              <div className="relative z-10 mt-5">
+                <Link
+                  href={step.ctaHref}
+                  id={`${step.id}-cta`}
+                  className="inline-flex items-center gap-1.5 text-[12px] font-bold px-4 py-2 rounded-full transition-all duration-200 hover:opacity-90 hover:-translate-y-0.5"
+                  style={{
+                    background: "rgba(255,255,255,0.95)",
+                    color: "#0d3d35",
+                    boxShadow: "0 2px 10px rgba(0,0,0,0.15)",
+                  }}
+                >
+                  {step.cta}
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round">
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                  </svg>
+                </Link>
+              </div>
             </div>
           ))}
-        </div>
-
-        {/* CTA */}
-        <div className="mt-10 flex flex-col items-center gap-3">
-          <p className="text-sm text-brand-muted">Ready to get started?</p>
-          <a
-            href="#cta"
-            id="how-it-works-cta"
-            className="btn-primary-lg"
-          >
-            Start Now — It&apos;s Free
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" aria-hidden="true">
-              <path d="M5 12h14M12 5l7 7-7 7" />
-            </svg>
-          </a>
         </div>
       </div>
     </section>

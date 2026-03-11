@@ -10,11 +10,26 @@ export default function HeroSection() {
       aria-labelledby="hero-heading"
       style={{ background: "#f5f0e8" }}
     >
+      {/* Keyframe animations */}
+      <style>{`
+        @keyframes hero-pulse {
+          0%, 100% { transform: scale(1); }
+          50% { transform: scale(1.14); }
+        }
+        @keyframes hero-bounce {
+          0%, 100% { transform: translateY(0px); }
+          50% { transform: translateY(-7px); }
+        }
+        .icon-pulse { animation: hero-pulse 2.2s ease-in-out infinite; }
+        .icon-bounce { animation: hero-bounce 2s ease-in-out infinite; }
+        .icon-bounce-delayed { animation: hero-bounce 2s ease-in-out infinite; animation-delay: 0.5s; }
+      `}</style>
+
       {/* Dot grid overlay */}
       <div className="absolute inset-0 dot-grid opacity-[0.3]" />
 
       <div className="container-max px-4 sm:px-6 lg:px-8 w-full">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center py-20 lg:py-28">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center py-10 lg:py-16">
 
           {/* ── Left column ── */}
           <div className="flex flex-col items-start gap-6">
@@ -65,18 +80,17 @@ export default function HeroSection() {
           {/* ── Right column: Photo image cards ── */}
           <div className="hidden lg:grid gap-3 h-[480px]" style={{ gridTemplateColumns: "1.15fr 1fr" }}>
 
-            {/* Large left card — Health */}
+            {/* Large left card — Life */}
             <div className="relative rounded-3xl overflow-hidden group cursor-pointer shadow-card-lifted">
               <Image
-                src="/health-card.png"
-                alt="Health Insurance"
+                src="/life-card.png"
+                alt="Life Insurance"
                 fill
                 className="object-cover transition-transform duration-500 group-hover:scale-105"
                 sizes="(max-width: 1024px) 0px, 280px"
               />
-              {/* dark gradient overlay at bottom */}
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent" />
-              {/* Badge */}
+              {/* Best Seller badge */}
               <div className="absolute top-4 left-4">
                 <span className="bg-white/20 backdrop-blur-sm text-white text-[9px] font-bold px-2.5 py-1 rounded-full uppercase tracking-widest border border-white/30">
                   Best Seller
@@ -84,18 +98,19 @@ export default function HeroSection() {
               </div>
               {/* Bottom label */}
               <div className="absolute bottom-0 left-0 right-0 p-5">
-                <p className="text-white font-bold text-2xl leading-none">Health</p>
+                <p className="text-white font-bold text-2xl leading-none">Life</p>
+                <p className="text-white/70 text-xs mt-1">Protecting your legacy</p>
               </div>
             </div>
 
-            {/* Right column: Life + Motor stacked */}
+            {/* Right column: Health + Motor stacked */}
             <div className="flex flex-col gap-3">
 
-              {/* Life card */}
+              {/* Health card */}
               <div className="relative flex-1 rounded-3xl overflow-hidden group cursor-pointer shadow-card-lifted">
                 <Image
-                  src="/life-card.png"
-                  alt="Life Insurance"
+                  src="/health-card.png"
+                  alt="Health Insurance"
                   fill
                   className="object-cover transition-transform duration-500 group-hover:scale-105"
                   sizes="(max-width: 1024px) 0px, 220px"
@@ -103,8 +118,8 @@ export default function HeroSection() {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
                 {/* Bottom label */}
                 <div className="absolute bottom-0 left-0 right-0 p-4">
-                  <p className="text-white font-bold text-xl leading-none">Life</p>
-                  <p className="text-white/70 text-xs mt-1">Protecting your legacy</p>
+                  <p className="text-white font-bold text-xl leading-none">Health</p>
+                  <p className="text-white/70 text-xs mt-1">Your wellbeing, covered</p>
                 </div>
               </div>
 
@@ -124,15 +139,16 @@ export default function HeroSection() {
                   <p className="text-white/70 text-xs mt-1">Smart vehicle security</p>
                 </div>
               </div>
+
             </div>
           </div>
 
-          {/* Mobile: simple 3-card row */}
+          {/* Mobile: simple 3-card row — Life, Health, Motor */}
           <div className="lg:hidden grid grid-cols-3 gap-3 h-44">
             {[
+              { src: "/life-card.png", label: "Life" },
               { src: "/health-card.png", label: "Health" },
-              { src: "/life-card.png",   label: "Life"   },
-              { src: "/motor-card.png",  label: "Motor"  },
+              { src: "/motor-card.png", label: "Motor" },
             ].map((c) => (
               <div key={c.label} className="relative rounded-2xl overflow-hidden shadow-card">
                 <Image src={c.src} alt={c.label} fill className="object-cover" sizes="30vw" />
