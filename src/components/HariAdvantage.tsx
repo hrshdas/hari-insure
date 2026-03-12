@@ -1,60 +1,52 @@
+import Image from "next/image";
+
 const steps = [
     {
         id: "adv-visit",
         emoji: "🌐",
         color: "#16a37f",
-        bg: "#e8f8f4",
+        bg: "transparent",
+        iconSize: 100,
         title: "Visit",
         subtitle: "Come to HariInsure",
         icon: (
-            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
-                <circle cx="12" cy="12" r="10" />
-                <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
-            </svg>
+            <Image src="/visit-icon.png" alt="Visit HariInsure" width={100} height={100} className="object-contain" />
         ),
     },
     {
         id: "adv-know",
         emoji: "📚",
         color: "#f97316",
-        bg: "#fff7ed",
+        bg: "transparent",
+        iconSize: 100,
         title: "Learn",
         subtitle: "Understand your needs",
         icon: (
-            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />
-                <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
-            </svg>
+            <Image src="/learn-icon.png" alt="Learn about insurance" width={100} height={100} className="object-contain" />
         ),
     },
     {
         id: "adv-compare",
         emoji: "⚖️",
         color: "#2563eb",
-        bg: "#eff6ff",
+        bg: "transparent",
+        iconSize: 100,
         title: "Compare",
         subtitle: "Find the best plan",
         icon: (
-            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
-                <rect x="3" y="3" width="9" height="9" rx="1" />
-                <rect x="12" y="3" width="9" height="9" rx="1" />
-                <rect x="3" y="12" width="9" height="9" rx="1" />
-                <rect x="12" y="12" width="9" height="9" rx="1" />
-            </svg>
+            <Image src="/compare-icon.png" alt="Compare insurance plans" width={100} height={100} className="object-contain" />
         ),
     },
     {
         id: "adv-buy",
         emoji: "✅",
         color: "#9333ea",
-        bg: "#faf5ff",
+        bg: "transparent",
+        iconSize: 100,
         title: "Purchase",
         subtitle: "Insure in minutes",
         icon: (
-            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
-                <path d="M9 12l2 2 4-4" />
-            </svg>
+            <Image src="/purchase-icon.png" alt="Purchase insurance" width={100} height={100} className="object-contain" />
         ),
     },
     {
@@ -62,6 +54,7 @@ const steps = [
         emoji: "🤝",
         color: "#16a37f",
         bg: "#e8f8f4",
+        iconSize: 62,
         title: "Support",
         subtitle: "We're always here",
         icon: (
@@ -116,8 +109,8 @@ export default function HariAdvantage() {
                             >
                                 {/* Icon circle */}
                                 <div
-                                    className="w-[62px] h-[62px] rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-200 flex-shrink-0"
-                                    style={{ backgroundColor: step.bg, color: step.color }}
+                                    className="rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-200 flex-shrink-0"
+                                    style={{ backgroundColor: step.bg, color: step.color, width: step.iconSize, height: step.iconSize }}
                                 >
                                     {step.icon}
                                 </div>

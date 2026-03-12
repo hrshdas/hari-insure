@@ -83,7 +83,7 @@ export default function HeroSection() {
             {/* Large left card — Life */}
             <div className="relative rounded-3xl overflow-hidden group cursor-pointer shadow-card-lifted">
               <Image
-                src="/life-card.png"
+                src="/life-hero.png"
                 alt="Life Insurance"
                 fill
                 className="object-cover transition-transform duration-500 group-hover:scale-105"
@@ -109,7 +109,7 @@ export default function HeroSection() {
               {/* Health card */}
               <div className="relative flex-1 rounded-3xl overflow-hidden group cursor-pointer shadow-card-lifted">
                 <Image
-                  src="/health-card.png"
+                  src="/health-hero-square.png"
                   alt="Health Insurance"
                   fill
                   className="object-cover transition-transform duration-500 group-hover:scale-105"
@@ -126,7 +126,7 @@ export default function HeroSection() {
               {/* Motor card */}
               <div className="relative flex-1 rounded-3xl overflow-hidden group cursor-pointer shadow-card-lifted">
                 <Image
-                  src="/motor-card.png"
+                  src="/motor-hero.png"
                   alt="Motor Insurance"
                   fill
                   className="object-cover transition-transform duration-500 group-hover:scale-105"
@@ -146,9 +146,9 @@ export default function HeroSection() {
           {/* Mobile: simple 3-card row — Life, Health, Motor */}
           <div className="lg:hidden grid grid-cols-3 gap-3 h-44">
             {[
-              { src: "/life-card.png", label: "Life" },
-              { src: "/health-card.png", label: "Health" },
-              { src: "/motor-card.png", label: "Motor" },
+              { src: "/life-hero.png", label: "Life" },
+              { src: "/health-hero-square.png", label: "Health" },
+              { src: "/motor-hero.png", label: "Motor" },
             ].map((c) => (
               <div key={c.label} className="relative rounded-2xl overflow-hidden shadow-card">
                 <Image src={c.src} alt={c.label} fill className="object-cover" sizes="30vw" />
