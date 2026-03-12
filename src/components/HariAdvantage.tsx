@@ -53,15 +53,12 @@ const steps = [
         id: "adv-support",
         emoji: "🤝",
         color: "#16a37f",
-        bg: "#e8f8f4",
-        iconSize: 62,
+        bg: "transparent",
+        iconSize: 100,
         title: "Support",
         subtitle: "We're always here",
         icon: (
-            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
-                <path d="M8 10h8M8 14h5" />
-            </svg>
+            <Image src="/support-icon.png" alt="Customer Support" width={100} height={100} className="object-contain" />
         ),
     },
 ];
