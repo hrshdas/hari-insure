@@ -4,20 +4,20 @@ import { useState } from "react";
 
 const faqs = [
     {
-        q: "What types of insurance does HariInsure offer?",
-        a: "HariInsure offers a comprehensive range of policies including Health Insurance, Life Insurance, Term Plans, Motor Insurance, Family Floater Plans, and Investment-linked plans — all from India's top insurers.",
+        q: "What types of insurance does HariInsurance offer?",
+        a: "HariInsurance offers a comprehensive range of policies including Health Insurance, Life Insurance, Term Plans, Motor Insurance, Family Floater Plans, and Investment-linked plans — all from India's top insurers.",
     },
     {
         q: "How do I choose the right insurance plan for my family?",
         a: "Our digital advisor helps you compare plans side-by-side based on your age, income, health history, and coverage needs. You can also speak to one of our experts for personalised guidance at zero cost.",
     },
     {
-        q: "Is my personal data safe with HariInsure?",
+        q: "Is my personal data safe with HariInsurance?",
         a: "Absolutely. We use industry-standard encryption and never sell your data to third parties. Your information is used solely to match you with the most suitable insurance options.",
     },
     {
         q: "Can I modify or port my existing insurance policy?",
-        a: "Yes. HariInsure supports policy porting, top-up additions, and mid-term modifications for most insurers. Our team guides you through every step to ensure seamless transitions without coverage gaps.",
+        a: "Yes. HariInsurance supports policy porting, top-up additions, and mid-term modifications for most insurers. Our team guides you through every step to ensure seamless transitions without coverage gaps.",
     },
     {
         q: "How does the claim assistance process work?",
@@ -25,7 +25,7 @@ const faqs = [
     },
     {
         q: "Are there any hidden charges or brokerage fees?",
-        a: "None at all. HariInsure is completely free for policyholders. We earn a regulated commission from insurers, which means you get expert advice and plan comparison at zero cost to you.",
+        a: "None at all. HariInsurance is completely free for policyholders. We earn a regulated commission from insurers, which means you get expert advice and plan comparison at zero cost to you.",
     },
 ];
 

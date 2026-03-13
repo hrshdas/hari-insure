@@ -1,5 +1,10 @@
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
+import InsuranceLearningCenter from "@/components/InsuranceLearningCenter";
+import FeaturedPlans from "@/components/FeaturedPlans";
+import InsuranceCostGuide from "@/components/InsuranceCostGuide";
+import RegulatoryTrust from "@/components/RegulatoryTrust";
+import ComplianceDisclaimer from "@/components/ComplianceDisclaimer";
 
 import PopularPlans from "@/components/PopularPlans";
 import HariAdvantage from "@/components/HariAdvantage";
@@ -15,6 +20,12 @@ export default function Home() {
       <Navbar />
       <main>
         <HeroSection />
+
+        <InsuranceLearningCenter />
+        <FeaturedPlans />
+        <InsuranceCostGuide />
+        <RegulatoryTrust />
+        <ComplianceDisclaimer />
 
         <PopularPlans />
         <HariAdvantage />

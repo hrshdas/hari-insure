@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Nunito } from "next/font/google";
+import { Nunito, Inter } from "next/font/google";
 import "./globals.css";
 
 const nunito = Nunito({
@@ -9,10 +9,18 @@ const nunito = Nunito({
   display: "swap",
 });
 
+// Inter is the closest open-source equivalent to SF Pro — identical aesthetic on Windows/Android
+const inter = Inter({
+  subsets: ["latin"],
+  weight: ["700", "800"],
+  variable: "--font-inter",
+  display: "swap",
+});
+
 export const metadata: Metadata = {
-  title: "Hari Insure — Smart Insurance Comparison for Modern India",
+  title: "HariInsurance — Smart Insurance Comparison for Modern India",
   description:
-    "Compare health, life, motor, and more insurance plans instantly. Trusted by thousands. 100% digital, zero paperwork. Get your personalized quote from Hari Insure today.",
+    "Compare health, life, motor, and more insurance plans instantly. Trusted by thousands. 100% digital, zero paperwork. Get your personalized quote from HariInsurance today.",
   keywords: [
     "insurance",
     "health insurance",
@@ -23,19 +31,19 @@ export const metadata: Metadata = {
     "insurance comparison",
     "India insurance",
   ],
-  authors: [{ name: "Hari Insure" }],
-  creator: "Hari Insure",
+  authors: [{ name: "HariInsurance" }],
+  creator: "HariInsurance",
   openGraph: {
     type: "website",
     locale: "en_IN",
     url: "https://hariinsure.com",
-    title: "Hari Insure — Smart Insurance Comparison",
+    title: "HariInsurance — Smart Insurance Comparison",
     description: "Compare & buy insurance plans tailored for your lifestyle.",
-    siteName: "Hari Insure",
+    siteName: "HariInsurance",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Hari Insure — Smart Insurance Comparison",
+    title: "HariInsurance — Smart Insurance Comparison",
     description: "Compare & buy insurance plans tailored for your lifestyle.",
   },
   robots: {
@@ -58,7 +66,7 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/favicon.ico" />
       </head>
-      <body className={`antialiased ${nunito.variable}`}>{children}</body>
+      <body className={`antialiased ${nunito.variable} ${inter.variable}`}>{children}</body>
     </html>
   );
 }

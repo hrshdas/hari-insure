@@ -38,7 +38,7 @@ export default function CTASection() {
           </h2>
 
           <p className="mt-5 text-lg text-white/65 leading-relaxed max-w-xl mx-auto">
-            Join 2 lakh families who trust Hari Insure. Get your free personalized quote in under 2 minutes — no spam, ever.
+            Join 2 lakh families who trust HariInsurance. Get your free personalized quote in under 2 minutes — no spam, ever.
           </p>
 
           {/* Buttons */}

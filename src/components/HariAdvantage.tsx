@@ -8,9 +8,9 @@ const steps = [
         bg: "transparent",
         iconSize: 100,
         title: "Visit",
-        subtitle: "Come to HariInsure",
+        subtitle: "Come to HariInsurance",
         icon: (
-            <Image src="/visit-icon.png" alt="Visit HariInsure" width={100} height={100} className="object-contain" />
+            <Image src="/visit-icon.png" alt="Visit HariInsurance" width={100} height={100} className="object-contain" />
         ),
     },
     {
@@ -87,7 +87,7 @@ export default function HariAdvantage() {
                         className="text-[2rem] sm:text-[2.4rem] font-bold tracking-tight leading-tight font-[family-name:var(--font-nunito)]"
                         style={{ color: "#0d3d35" }}
                     >
-                        The HariInsure Advantage
+                        The HariInsurance Advantage
                     </h2>
                     <p className="mt-2 text-sm text-brand-muted max-w-xl leading-relaxed">
                         When you buy insurance from us, you get more than just financial safety — you get expert guidance, transparent pricing, and lifelong support at every step.

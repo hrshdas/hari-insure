@@ -16,8 +16,8 @@
 
   body {
     font-family: 'Outfit', 'Inter', system-ui, -apple-system, sans-serif;
-    background-color: #f5f0e8;
-    color: #0d3d35;
+    background-color: #fafafa; /* Modern soft SaaS background */
+    color: #0f172a; /* Slate 900 for sharper typography */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     line-height: 1.6;
@@ -82,12 +82,12 @@
 
   /* Cards */
   .card {
-    @apply bg-white rounded-2xl border border-gray-200 transition-all duration-300 hover:-translate-y-1;
-    box-shadow: 0 0 0 1px rgba(0,0,0,0.04), 0 4px 16px rgba(0,0,0,0.06);
+    @apply bg-white rounded-2xl border border-gray-100 transition-all duration-300 hover:-translate-y-1;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.03), 0 1px 3px rgba(0,0,0,0.02);
     transition-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
   }
   .card:hover {
-    box-shadow: 0 0 0 1px rgba(0,0,0,0.06), 0 8px 32px rgba(0,0,0,0.10);
+    box-shadow: 0 12px 40px rgba(0,0,0,0.08), 0 0 0 1px rgba(0,0,0,0.02);
   }
 
   .card-flat {
@@ -111,23 +111,23 @@
   }
 
   .heading-display {
-    @apply font-bold leading-none;
-    font-size: clamp(2.5rem, 5vw, 3.75rem);
-    color: #0d3d35;
+    @apply font-bold leading-[1.1];
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    color: #0f172a;
     letter-spacing: -0.03em;
   }
 
   .heading-lg {
-    @apply font-bold;
+    @apply font-bold leading-tight;
     font-size: clamp(2rem, 4vw, 3rem);
-    color: #0d3d35;
+    color: #0f172a;
     letter-spacing: -0.025em;
   }
 
   .heading-md {
-    @apply font-bold;
+    @apply font-bold leading-tight;
     font-size: clamp(1.5rem, 3vw, 2.25rem);
-    color: #0d3d35;
+    color: #0f172a;
     letter-spacing: -0.02em;
   }
 
@@ -177,6 +177,119 @@
   background-image: radial-gradient(circle, #d1d5db 1px, transparent 1px);
   background-size: 28px 28px;
 }
+
+/* ──────────────────────────────────
+   Prose / Article page styles
+   ────────────────────────────────── */
+.prose-article {
+  color: #334155;
+  line-height: 1.75;
+  font-size: 1rem;
+  max-width: 68ch;
+}
+
+.prose-article h2 {
+  font-size: clamp(1.35rem, 2.5vw, 1.75rem);
+  font-weight: 700;
+  color: #0d3d35;
+  letter-spacing: -0.015em;
+  margin-top: 2.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.prose-article h3 {
+  font-size: clamp(1.05rem, 2vw, 1.25rem);
+  font-weight: 600;
+  color: #0d3d35;
+  margin-top: 1.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.prose-article p {
+  margin-bottom: 1.1rem;
+}
+
+.prose-article ul, .prose-article ol {
+  padding-left: 1.5rem;
+  margin-bottom: 1.1rem;
+}
+
+.prose-article li {
+  margin-bottom: 0.4rem;
+}
+
+.prose-article strong {
+  color: #0d3d35;
+  font-weight: 600;
+}
+
+.prose-article a {
+  color: #16a37f;
+  text-decoration: underline;
+  text-decoration-color: rgba(22,163,127,0.3);
+  text-underline-offset: 2px;
+  transition: color 150ms;
+}
+.prose-article a:hover { color: #0e7a5e; }
+
+.prose-article blockquote {
+  border-left: 3px solid #16a37f;
+  padding: 0.75rem 1.25rem;
+  background: #e8f8f4;
+  border-radius: 0 0.75rem 0.75rem 0;
+  color: #0d3d35;
+  font-style: italic;
+  margin: 1.5rem 0;
+}
+
+.prose-article .callout {
+  background: #fff4ed;
+  border: 1px solid rgba(249,115,22,0.2);
+  border-radius: 0.75rem;
+  padding: 1rem 1.25rem;
+  margin: 1.5rem 0;
+}
+
+.prose-article .callout-green {
+  background: #e8f8f4;
+  border: 1px solid rgba(22,163,127,0.2);
+  border-radius: 0.75rem;
+  padding: 1rem 1.25rem;
+  margin: 1.5rem 0;
+}
+
+.prose-article .example-box {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.75rem;
+  padding: 1.25rem;
+  margin: 1.5rem 0;
+}
+
+.prose-article table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  font-size: 0.875rem;
+}
+
+.prose-article th {
+  background: #f1f5f9;
+  color: #0d3d35;
+  font-weight: 600;
+  text-align: left;
+  padding: 0.6rem 0.875rem;
+  border-bottom: 2px solid #e2e8f0;
+}
+
+.prose-article td {
+  padding: 0.6rem 0.875rem;
+  border-bottom: 1px solid #f1f5f9;
+  color: #475569;
+}
+
+.prose-article tr:last-child td { border-bottom: none; }
+.prose-article tr:hover td { background: #f8fafc; }
 
 /* ──────────────────────────────────
    Custom scrollbar

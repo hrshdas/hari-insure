@@ -1,165 +1,268 @@
 "use client";
 
 import Link from "next/link";
-import Image from "next/image";
+import { useState } from "react";
+
+// ─── Data ──────────────────────────────────────────────────────────────────
+
+const journeyCards = [
+  {
+    id: "health",
+    title: "I want to understand health insurance",
+    desc: "Coverage, claims, comparisons",
+    href: "/health",
+    accentColor: "#16a37f",
+    iconBg: "#dcfce7",
+    icon: (
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+      </svg>
+    ),
+  },
+  {
+    id: "term",
+    title: "I want to understand life / term insurance",
+    desc: "Protect your family's future",
+    href: "/term",
+    accentColor: "#2563eb",
+    iconBg: "#dbeafe",
+    icon: (
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+      </svg>
+    ),
+  },
+  {
+    id: "motor",
+    title: "I want to understand motor insurance",
+    desc: "Third-party, own damage, add-ons",
+    href: "/motor",
+    accentColor: "#f97316",
+    iconBg: "#ffedd5",
+    icon: (
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+        <rect x="1" y="3" width="15" height="13" rx="2" />
+        <polygon points="16 8 20 8 23 11 23 16 16 16 16 8" />
+        <circle cx="5.5" cy="18.5" r="2.5" />
+        <circle cx="18.5" cy="18.5" r="2.5" />
+      </svg>
+    ),
+  },
+  {
+    id: "deal",
+    title: "I want to know if I'm getting a good deal",
+    desc: "Compare plans & costs",
+    href: "/tax",
+    accentColor: "#9333ea",
+    iconBg: "#f3e8ff",
+    icon: (
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+        <circle cx="12" cy="12" r="10" />
+        <line x1="12" y1="8" x2="12" y2="12" />
+        <line x1="12" y1="16" x2="12.01" y2="16" />
+      </svg>
+    ),
+  },
+  {
+    id: "claim",
+    title: "I got a claim rejected / have a problem",
+    desc: "Rights, ombudsman, escalation",
+    href: "/problems",
+    accentColor: "#e11d48",
+    iconBg: "#ffe4e6",
+    icon: (
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+        <circle cx="12" cy="12" r="10" />
+        <path d="M16 16s-1.5-2-4-2-4 2-4 2" />
+        <line x1="9" y1="9" x2="9.01" y2="9" />
+        <line x1="15" y1="9" x2="15.01" y2="9" />
+      </svg>
+    ),
+  },
+];
+
+const trustBadges = [
+  {
+    label: "IRDAI Governed",
+    icon: (
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#2563eb" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+      </svg>
+    ),
+  },
+  {
+    label: "No Selling, Pure Education",
+    icon: (
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#f97316" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />
+        <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
+      </svg>
+    ),
+  },
+  {
+    label: "100% Free & Unbiased",
+    icon: (
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#16a37f" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+        <polyline points="22 4 12 14.01 9 11.01" />
+      </svg>
+    ),
+  },
+];
+
+// ─── Card Component ─────────────────────────────────────────────────────────
+
+function JourneyCard({ card }: { card: (typeof journeyCards)[0] }) {
+  const [hovered, setHovered] = useState(false);
+  return (
+    <Link
+      href={card.href}
+      className="flex items-center gap-4 bg-white rounded-2xl px-5 py-5 border border-gray-100 hover:-translate-y-0.5 transition-all duration-200"
+      style={{
+        boxShadow: hovered
+          ? `0 8px 28px rgba(0,0,0,0.07), inset 3px 0 0 ${card.accentColor}`
+          : `0 2px 10px rgba(0,0,0,0.04), inset 3px 0 0 ${card.accentColor}`,
+      }}
+      onMouseEnter={() => setHovered(true)}
+      onMouseLeave={() => setHovered(false)}
+    >
+      {/* Colored icon */}
+      <div
+        className="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0"
+        style={{ backgroundColor: card.iconBg, color: card.accentColor }}
+      >
+        {card.icon}
+      </div>
+
+      {/* Text */}
+      <div className="flex-1 min-w-0">
+        <p className="font-bold text-[15px] text-brand-ink leading-snug">{card.title}</p>
+        <p className="text-[13px] text-brand-muted mt-0.5">{card.desc}</p>
+      </div>
+
+      {/* Arrow */}
+      <div
+        className="flex-shrink-0 w-7 h-7 rounded-full flex items-center justify-center transition-colors duration-200"
+        style={{ backgroundColor: hovered ? card.accentColor : "#f1f5f9" }}
+      >
+        <svg
+          width="14"
+          height="14"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke={hovered ? "#fff" : "#94a3b8"}
+          strokeWidth="2.5"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        >
+          <path d="M9 18l6-6-6-6" />
+        </svg>
+      </div>
+    </Link>
+  );
+}
+
+// ─── Main Section ────────────────────────────────────────────────────────────
 
 export default function HeroSection() {
   return (
     <section
-      className="relative min-h-screen flex items-center overflow-hidden pt-16"
+      className="relative flex flex-col items-center pt-28 pb-20 px-4 sm:px-6 lg:px-8 overflow-hidden"
       aria-labelledby="hero-heading"
-      style={{ background: "#f5f0e8" }}
+      style={{
+        backgroundColor: "#f5f0e8",
+        backgroundImage: "url('/hero-bg.png')",
+        backgroundSize: "cover",
+        backgroundPosition: "center top",
+        backgroundRepeat: "no-repeat",
+      }}
     >
-      {/* Keyframe animations */}
-      <style>{`
-        @keyframes hero-pulse {
-          0%, 100% { transform: scale(1); }
-          50% { transform: scale(1.14); }
-        }
-        @keyframes hero-bounce {
-          0%, 100% { transform: translateY(0px); }
-          50% { transform: translateY(-7px); }
-        }
-        .icon-pulse { animation: hero-pulse 2.2s ease-in-out infinite; }
-        .icon-bounce { animation: hero-bounce 2s ease-in-out infinite; }
-        .icon-bounce-delayed { animation: hero-bounce 2s ease-in-out infinite; animation-delay: 0.5s; }
-      `}</style>
+      {/* Beige tint overlay to maintain brand color while letting the image show through */}
+      <div
+        className="absolute inset-0 pointer-events-none"
+        style={{ background: "rgba(245, 240, 232, 0.78)" }}
+      />
 
-      {/* Dot grid overlay */}
-      <div className="absolute inset-0 dot-grid opacity-[0.3]" />
+      {/* Dot grid */}
+      <div className="absolute inset-0 dot-grid opacity-20 pointer-events-none" />
 
-      <div className="container-max px-4 sm:px-6 lg:px-8 w-full">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center py-10 lg:py-16">
+      <div className="relative z-10 w-full max-w-4xl mx-auto flex flex-col items-center">
 
-          {/* ── Left column ── */}
-          <div className="flex flex-col items-start gap-6">
+        {/* Badge */}
+        <div className="inline-flex items-center gap-2 bg-[#d1fae5]/70 border border-[#6ee7b7]/40 px-4 py-1.5 rounded-full mb-10">
+          <span className="text-[11px] font-extrabold uppercase tracking-[0.18em] text-[#065f46]">HariInsurance India</span>
+          <span className="text-[11px] text-[#065f46]/60 font-medium">— Free Insurance Education</span>
+        </div>
 
-            {/* Eyebrow */}
-            <div className="flex items-center gap-2.5">
-              <span className="block w-8 h-[2px] bg-brand-orange rounded-full" />
-              <span className="text-sm font-semibold text-brand-orange tracking-wide">A Promise of Care</span>
-            </div>
+        {/* Headline */}
+        <h1
+          id="hero-heading"
+          className="text-[3rem] sm:text-[4rem] lg:text-[5rem] font-extrabold tracking-tight leading-[1.06] text-center mb-6"
+          style={{
+            color: "#0d3d35",
+            fontFamily:
+              '"SF Pro Display", -apple-system, BlinkMacSystemFont, var(--font-inter), "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
+          }}
+        >
+          Understand Insurance.<br />
+          <span style={{ color: "#16a37f" }}>Make Better Decisions.</span>
+        </h1>
 
-            {/* Headline */}
-            <h1
-              id="hero-heading"
-              className="text-[3rem] sm:text-[3.8rem] lg:text-[4.4rem] font-bold tracking-tight leading-[1.1] font-[family-name:var(--font-nunito)]"
-              style={{ color: "#0d3d35" }}
-            >
-              Secure your<br />
-              family&apos;s future<br />
-              with confidence.
-            </h1>
+        {/* Subheadline */}
+        <p className="text-center text-lg sm:text-xl text-brand-muted leading-relaxed max-w-xl mb-16">
+          Plain-English guides for every insurance question — no jargon, no sales, no pressure.
+        </p>
 
-            {/* Subtext */}
-            <p className="text-base text-brand-muted leading-relaxed max-w-[30rem]">
-              Experience premium protection tailored for your modern lifestyle with India&apos;s most trusted digital insurer.
-            </p>
+        {/* Section label */}
+        <p className="text-[11px] font-extrabold uppercase tracking-[0.22em] text-[#0d3d35]/40 mb-7">
+          What brings you here today?
+        </p>
 
-            {/* CTAs */}
-            <div className="flex flex-row gap-3 pt-1">
-              <Link
-                href="#cta"
-                id="hero-primary-btn"
-                className="inline-flex items-center justify-center gap-2 font-bold text-sm text-white px-7 py-3.5 rounded-full transition-all duration-200 hover:-translate-y-0.5"
-                style={{ background: "#0d3d35" }}
-              >
-                Start Your Protection
-              </Link>
-              <Link
-                href="#plans"
-                id="hero-view-plans-btn"
-                className="inline-flex items-center justify-center font-semibold text-sm px-7 py-3.5 rounded-full border-2 transition-all duration-200 hover:-translate-y-0.5 bg-transparent"
-                style={{ borderColor: "#0d3d35", color: "#0d3d35" }}
-              >
-                View Plans
-              </Link>
-            </div>
-          </div>
-
-          {/* ── Right column: Photo image cards ── */}
-          <div className="hidden lg:grid gap-3 h-[480px]" style={{ gridTemplateColumns: "1.15fr 1fr" }}>
-
-            {/* Large left card — Life */}
-            <div className="relative rounded-3xl overflow-hidden group cursor-pointer shadow-card-lifted">
-              <Image
-                src="/life-hero.png"
-                alt="Life Insurance"
-                fill
-                className="object-cover transition-transform duration-500 group-hover:scale-105"
-                sizes="(max-width: 1024px) 0px, 280px"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent" />
-              {/* Best Seller badge */}
-              <div className="absolute top-4 left-4">
-                <span className="bg-white/20 backdrop-blur-sm text-white text-[9px] font-bold px-2.5 py-1 rounded-full uppercase tracking-widest border border-white/30">
-                  Best Seller
-                </span>
-              </div>
-              {/* Bottom label */}
-              <div className="absolute bottom-0 left-0 right-0 p-5">
-                <p className="text-white font-bold text-2xl leading-none">Life</p>
-                <p className="text-white/70 text-xs mt-1">Protecting your legacy</p>
-              </div>
-            </div>
-
-            {/* Right column: Health + Motor stacked */}
-            <div className="flex flex-col gap-3">
-
-              {/* Health card */}
-              <div className="relative flex-1 rounded-3xl overflow-hidden group cursor-pointer shadow-card-lifted">
-                <Image
-                  src="/health-hero-square.png"
-                  alt="Health Insurance"
-                  fill
-                  className="object-cover transition-transform duration-500 group-hover:scale-105"
-                  sizes="(max-width: 1024px) 0px, 220px"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
-                {/* Bottom label */}
-                <div className="absolute bottom-0 left-0 right-0 p-4">
-                  <p className="text-white font-bold text-xl leading-none">Health</p>
-                  <p className="text-white/70 text-xs mt-1">Your wellbeing, covered</p>
-                </div>
-              </div>
-
-              {/* Motor card */}
-              <div className="relative flex-1 rounded-3xl overflow-hidden group cursor-pointer shadow-card-lifted">
-                <Image
-                  src="/motor-hero.png"
-                  alt="Motor Insurance"
-                  fill
-                  className="object-cover transition-transform duration-500 group-hover:scale-105"
-                  sizes="(max-width: 1024px) 0px, 220px"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
-                {/* Bottom label */}
-                <div className="absolute bottom-0 left-0 right-0 p-4">
-                  <p className="text-white font-bold text-xl leading-none">Motor</p>
-                  <p className="text-white/70 text-xs mt-1">Smart vehicle security</p>
-                </div>
-              </div>
-
-            </div>
-          </div>
-
-          {/* Mobile: simple 3-card row — Life, Health, Motor */}
-          <div className="lg:hidden grid grid-cols-3 gap-3 h-44">
-            {[
-              { src: "/life-hero.png", label: "Life" },
-              { src: "/health-hero-square.png", label: "Health" },
-              { src: "/motor-hero.png", label: "Motor" },
-            ].map((c) => (
-              <div key={c.label} className="relative rounded-2xl overflow-hidden shadow-card">
-                <Image src={c.src} alt={c.label} fill className="object-cover" sizes="30vw" />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
-                <p className="absolute bottom-2 left-3 text-white font-bold text-sm">{c.label}</p>
-              </div>
+        {/* Card grid: 3 top + 2 bottom centered */}
+        <div className="w-full max-w-5xl space-y-4">
+          {/* Row 1 — 3 cards */}
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            {journeyCards.slice(0, 3).map((card) => (
+              <JourneyCard key={card.id} card={card} />
             ))}
           </div>
-
+          {/* Row 2 — 2 cards centered */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-[calc(66.66%+8px)] mx-auto w-full">
+            {journeyCards.slice(3).map((card) => (
+              <JourneyCard key={card.id} card={card} />
+            ))}
+          </div>
         </div>
+
+        {/* Trust badges */}
+        <div className="flex flex-wrap items-center justify-center gap-6 sm:gap-10 mt-14 mb-10">
+          {trustBadges.map((b) => (
+            <div key={b.label} className="flex items-center gap-2 text-[13px] font-semibold text-brand-muted/80">
+              {b.icon}
+              {b.label}
+            </div>
+          ))}
+        </div>
+
+        {/* CTA Button */}
+        <Link
+          href="#cta"
+          className="inline-flex items-center gap-3 bg-brand-orange hover:bg-brand-orange-dark text-white font-bold text-base sm:text-lg px-9 py-4 rounded-full shadow-lg shadow-brand-orange/20 transition-all duration-200 hover:-translate-y-0.5"
+        >
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M21 15a2 2 0 0 1-2 2H7l4-4-4-4h12a2 2 0 0 1 2 2z" />
+            <path d="M3 21V3" />
+          </svg>
+          Talk to a Licensed Advisor — Free
+        </Link>
+        <p className="mt-4 text-[11px] font-semibold uppercase tracking-widest text-[#0d3d35]/35">
+          IRDAI-licensed. No pressure. No sales.
+        </p>
       </div>
+
+      {/* Subtle background glows */}
+      <div className="absolute top-0 right-0 w-[32rem] h-[32rem] bg-brand-green/5 rounded-full blur-[120px] pointer-events-none" />
+      <div className="absolute bottom-0 left-0 w-[32rem] h-[32rem] bg-brand-orange/5 rounded-full blur-[120px] pointer-events-none" />
     </section>
   );
 }
