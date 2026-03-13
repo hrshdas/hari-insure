@@ -36,7 +36,7 @@ export default function ClaimDelay() {
           </div>
 
           <h2>Step 2 — Get the reason in writing</h2>
-          <p>Call or email the insurer and ask for a written update on the status. If they cite a "pending investigation," ask for the specific reason and expected timeline in writing.</p>
+          <p>Call or email the insurer and ask for a written update on the status. If they cite a &quot;pending investigation,&quot; ask for the specific reason and expected timeline in writing.</p>
 
           <h2>Step 3 — Escalate to the Grievance Redressal Officer (GRO)</h2>
           <p>Every insurer has a GRO. Write a formal complaint referencing the claim number, date of submission, and the delay. The GRO must respond within 15 days.</p>

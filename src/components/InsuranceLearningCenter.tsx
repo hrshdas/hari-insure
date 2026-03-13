@@ -71,7 +71,7 @@ export default function InsuranceLearningCenter() {
             Insurance Learning Center
           </h2>
           <p className="text-brand-muted max-w-2xl mx-auto">
-            Demystifying insurance concepts so you can make informed decisions for your family's security.
+            Demystifying insurance concepts so you can make informed decisions for your family&apos;s security.
           </p>
         </div>
 
