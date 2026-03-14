@@ -54,7 +54,7 @@ export default function LeadForm() {
               <path d="M20 6L9 17l-5-5"/>
             </svg>
           </div>
-          <p className="text-sm font-semibold text-brand-ink">We'll call you shortly!</p>
+          <p className="text-sm font-semibold text-brand-ink">We&apos;ll call you shortly!</p>
           <p className="text-xs text-brand-muted mt-1">Our advisor will reach out within a few hours.</p>
         </div>
       ) : (
