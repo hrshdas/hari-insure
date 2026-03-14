@@ -3,7 +3,7 @@ import Footer from "@/components/Footer";
 import ArticleLayout from "@/components/ArticleLayout";
 
 export const metadata = {
-  title: "Term vs Endowment vs ULIP — The Honest Comparison — HariInsurance India",
+  title: "Term vs Endowment vs ULIP — The Honest Comparison — Hari Insurance India",
   description: "Why financial advisors consistently recommend pure term insurance over endowment plans and ULIPs.",
 };
 

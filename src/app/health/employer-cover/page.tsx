@@ -4,7 +4,7 @@ import ArticleLayout from "@/components/ArticleLayout";
 import AdvisorCTA from "@/components/AdvisorCTA";
 
 export const metadata = {
-  title: "Employer Health Insurance — Do You Need Your Own Policy? — HariInsurance India",
+  title: "Employer Health Insurance — Do You Need Your Own Policy? — Hari Insurance India",
   description: "My employer covers me — do I still need personal health insurance? Honest answer with the risks of relying only on group cover.",
 };
 

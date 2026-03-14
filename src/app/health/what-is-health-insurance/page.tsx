@@ -4,7 +4,7 @@ import ArticleLayout from "@/components/ArticleLayout";
 import AdvisorCTA from "@/components/AdvisorCTA";
 
 export const metadata = {
-  title: "What is Health Insurance? — HariInsurance India",
+  title: "What is Health Insurance? — Hari Insurance India",
   description: "A plain-English, 2-minute explainer on what health insurance is, how it works, and why you need it in India.",
 };
 

@@ -4,7 +4,7 @@ import ArticleLayout from "@/components/ArticleLayout";
 import AdvisorCTA from "@/components/AdvisorCTA";
 
 export const metadata = {
-  title: "How to Use the Insurance Ombudsman — Free, No Lawyer Needed — HariInsurance India",
+  title: "How to Use the Insurance Ombudsman — Free, No Lawyer Needed — Hari Insurance India",
   description: "Step-by-step guide to approaching the Insurance Ombudsman in India — free, fast, binding on insurers.",
 };
 

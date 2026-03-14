@@ -4,7 +4,7 @@ import ArticleLayout from "@/components/ArticleLayout";
 import AdvisorCTA from "@/components/AdvisorCTA";
 
 export const metadata = {
-  title: "Old vs New Tax Regime — Which is Better for Insurance? — HariInsurance India",
+  title: "Old vs New Tax Regime — Which is Better for Insurance? — Hari Insurance India",
   description: "How the choice between the old and new income tax regimes in India affects your health and life insurance deductions.",
 };
 

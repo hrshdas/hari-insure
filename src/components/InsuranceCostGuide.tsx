@@ -72,8 +72,8 @@ export default function InsuranceCostGuide() {
         </div>
 
         <div className="mt-12 p-6 bg-brand-beige rounded-2xl border border-brand-border/50 text-center">
-          <p className="text-sm text-brand-muted italic">
-            <span className="font-bold not-italic text-brand-orange mr-2">Disclaimer:</span>
+          <p className="text-sm text-brand-muted font-semibold">
+            <span className="font-extrabold text-brand-orange mr-2">Disclaimer:</span>
             Premium ranges are approximate estimates and actual premiums depend on underwriting factors such as age, health status, vehicle model, and coverage chosen.
           </p>
         </div>

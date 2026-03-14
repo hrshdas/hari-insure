@@ -2,7 +2,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 export const metadata = {
-  title: "Talk to an Advisor — HariInsurance India",
+  title: "Talk to an Advisor — Hari Insurance India",
   description: "Book a free, zero-pressure consultation with our unbiased insurance experts.",
 };
 

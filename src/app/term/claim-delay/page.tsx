@@ -4,7 +4,7 @@ import Footer from "@/components/Footer";
 import ArticleLayout from "@/components/ArticleLayout";
 
 export const metadata = {
-  title: "Insurer Delaying My Claim — HariInsurance India",
+  title: "Insurer Delaying My Claim — Hari Insurance India",
   description: "Step-by-step guide on what to do when a life insurance insurer delays your claim, including regulatory timelines and escalation steps.",
 };
 

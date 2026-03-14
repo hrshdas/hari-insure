@@ -4,7 +4,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 export const metadata = {
-  title: "Motor Insurance Guide — HariInsurance India",
+  title: "Motor Insurance Guide — Hari Insurance India",
   description: "Third-party vs comprehensive, IDV, NCB, add-ons — everything about motor insurance in India explained simply.",
 };
 

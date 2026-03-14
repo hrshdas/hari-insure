@@ -4,7 +4,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 export const metadata = {
-  title: "Health Insurance Guide — HariInsurance India",
+  title: "Health Insurance Guide — Hari Insurance India",
   description: "Understand health insurance in plain English. Co-payments, room rent limits, claim process, plan comparison — everything you need to make a smart decision.",
 };
 

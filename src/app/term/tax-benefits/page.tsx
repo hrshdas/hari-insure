@@ -3,7 +3,7 @@ import Footer from "@/components/Footer";
 import ArticleLayout from "@/components/ArticleLayout";
 
 export const metadata = {
-  title: "Term Insurance Tax Benefits — Section 80C and 10(10D) — HariInsurance India",
+  title: "Term Insurance Tax Benefits — Section 80C and 10(10D) — Hari Insurance India",
   description: "How to save tax on term insurance premiums under Section 80C and receive tax-free death benefit under Section 10(10D).",
 };
 

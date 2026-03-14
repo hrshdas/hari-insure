@@ -4,7 +4,7 @@ import ArticleLayout from "@/components/ArticleLayout";
 import AdvisorCTA from "@/components/AdvisorCTA";
 
 export const metadata = {
-  title: "Health Insurance Buying Checklist — 12 Items — HariInsurance India",
+  title: "Health Insurance Buying Checklist — 12 Items — Hari Insurance India",
   description: "A 12-point checklist to evaluate any health insurance plan before you buy. Never miss a feature that matters.",
 };
 

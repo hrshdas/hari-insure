@@ -4,7 +4,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 export const metadata = {
-  title: "Term & Life Insurance Guide — HariInsurance India",
+  title: "Term & Life Insurance Guide — Hari Insurance India",
   description: "Complete plain-English guide to term insurance in India — how much cover, which riders, what causes rejection, and how to compare plans.",
 };
 

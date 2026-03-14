@@ -2,7 +2,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 export const metadata = {
-  title: "Insurance Glossary — Plain English Dictionary — HariInsurance India",
+  title: "Insurance Glossary — Plain English Dictionary — Hari Insurance India",
   description: "A-Z dictionary of Indian insurance terms explained in simple English without the jargon.",
 };
 

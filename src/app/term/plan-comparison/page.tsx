@@ -3,7 +3,7 @@ import Footer from "@/components/Footer";
 import ArticleLayout from "@/components/ArticleLayout";
 
 export const metadata = {
-  title: "Top Term Plans Comparison 2026 — HariInsurance India",
+  title: "Top Term Plans Comparison 2026 — Hari Insurance India",
   description: "Objective comparison of India's top term insurance plans in 2026 — CSR, features, and pricing.",
 };
 

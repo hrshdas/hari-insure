@@ -8,7 +8,7 @@ import { useState } from "react";
 const journeyCards = [
   {
     id: "health",
-    title: "I want to understand health insurance",
+    title: "Know about health insurance",
     desc: "Coverage, claims, comparisons",
     href: "/health",
     accentColor: "#16a37f",
@@ -21,7 +21,7 @@ const journeyCards = [
   },
   {
     id: "term",
-    title: "I want to understand life / term insurance",
+    title: "Know about life / term insurance",
     desc: "Protect your family's future",
     href: "/term",
     accentColor: "#2563eb",
@@ -34,7 +34,7 @@ const journeyCards = [
   },
   {
     id: "motor",
-    title: "I want to understand motor insurance",
+    title: "Know about motor insurance",
     desc: "Third-party, own damage, add-ons",
     href: "/motor",
     accentColor: "#f97316",
@@ -50,7 +50,7 @@ const journeyCards = [
   },
   {
     id: "deal",
-    title: "I want to know if I'm getting a good deal",
+    title: "Know if you're getting a good deal",
     desc: "Compare plans & costs",
     href: "/tax",
     accentColor: "#9333ea",
@@ -65,7 +65,7 @@ const journeyCards = [
   },
   {
     id: "claim",
-    title: "I got a claim rejected / have a problem",
+    title: "Know your rights after a claim rejection",
     desc: "Rights, ombudsman, escalation",
     href: "/problems",
     accentColor: "#e11d48",
@@ -190,7 +190,7 @@ export default function HeroSection() {
 
         {/* Badge */}
         <div className="inline-flex items-center gap-2 bg-[#d1fae5]/70 border border-[#6ee7b7]/40 px-4 py-1.5 rounded-full mb-10">
-          <span className="text-[11px] font-extrabold uppercase tracking-[0.18em] text-[#065f46]">HariInsurance India</span>
+          <span className="text-[11px] font-extrabold uppercase tracking-[0.18em] text-[#065f46]">Hari Insurance India</span>
           <span className="text-[11px] text-[#065f46]/60 font-medium">— Free Insurance Education</span>
         </div>
 

@@ -4,7 +4,7 @@ import ArticleLayout from "@/components/ArticleLayout";
 import AdvisorCTA from "@/components/AdvisorCTA";
 
 export const metadata = {
-  title: "Motor Insurance Cost Guide — HariInsurance India",
+  title: "Motor Insurance Cost Guide — Hari Insurance India",
   description: "Understand motor insurance costs, how to lower them, and when to switch insurers versus renewing with your dealer.",
 };
 

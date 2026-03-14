@@ -4,7 +4,7 @@ import ArticleLayout from "@/components/ArticleLayout";
 import AdvisorCTA from "@/components/AdvisorCTA";
 
 export const metadata = {
-  title: "Motor Insurance Add-Ons: Are They Worth It? — HariInsurance India",
+  title: "Motor Insurance Add-Ons: Are They Worth It? — Hari Insurance India",
   description: "Zero dep, engine protection, NCB protect, RTI — which motor insurance add-ons do you actually need in India?",
 };
 

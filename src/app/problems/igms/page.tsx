@@ -3,7 +3,7 @@ import Footer from "@/components/Footer";
 import ArticleLayout from "@/components/ArticleLayout";
 
 export const metadata = {
-  title: "How to Use Bima Bharosa (IGMS) — HariInsurance India",
+  title: "How to Use Bima Bharosa (IGMS) — Hari Insurance India",
   description: "Step-by-step guide to filing an insurance complaint on the IRDAI's Bima Bharosa (IGMS) portal.",
 };
 

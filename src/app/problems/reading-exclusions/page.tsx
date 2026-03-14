@@ -3,7 +3,7 @@ import Footer from "@/components/Footer";
 import ArticleLayout from "@/components/ArticleLayout";
 
 export const metadata = {
-  title: "How to Read Your Policy's Exclusions Section — HariInsurance India",
+  title: "How to Read Your Policy's Exclusions Section — Hari Insurance India",
   description: "A plain-English guide to understanding the exclusions in your health or life insurance policy.",
 };
 

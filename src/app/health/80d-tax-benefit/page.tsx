@@ -4,7 +4,7 @@ import ArticleLayout from "@/components/ArticleLayout";
 import AdvisorCTA from "@/components/AdvisorCTA";
 
 export const metadata = {
-  title: "Section 80D — Tax Benefit on Health Insurance — HariInsurance India",
+  title: "Section 80D — Tax Benefit on Health Insurance — Hari Insurance India",
   description: "How Section 80D works in India: limits, examples, senior parent rules, and how to maximise your health insurance tax deduction.",
 };
 

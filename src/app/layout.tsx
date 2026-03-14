@@ -18,9 +18,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "HariInsurance — Smart Insurance Comparison for Modern India",
+  title: "Hari Insurance — Smart Insurance Comparison for Modern India",
   description:
-    "Compare health, life, motor, and more insurance plans instantly. Trusted by thousands. 100% digital, zero paperwork. Get your personalized quote from HariInsurance today.",
+    "Compare health, life, motor, and more insurance plans instantly. Trusted by thousands. 100% digital, zero paperwork. Get your personalized quote from Hari Insurance today.",
   keywords: [
     "insurance",
     "health insurance",
@@ -31,19 +31,19 @@ export const metadata: Metadata = {
     "insurance comparison",
     "India insurance",
   ],
-  authors: [{ name: "HariInsurance" }],
-  creator: "HariInsurance",
+  authors: [{ name: "Hari Insurance" }],
+  creator: "Hari Insurance",
   openGraph: {
     type: "website",
     locale: "en_IN",
     url: "https://hariinsure.com",
-    title: "HariInsurance — Smart Insurance Comparison",
+    title: "Hari Insurance — Smart Insurance Comparison",
     description: "Compare & buy insurance plans tailored for your lifestyle.",
-    siteName: "HariInsurance",
+    siteName: "Hari Insurance",
   },
   twitter: {
     card: "summary_large_image",
-    title: "HariInsurance — Smart Insurance Comparison",
+    title: "Hari Insurance — Smart Insurance Comparison",
     description: "Compare & buy insurance plans tailored for your lifestyle.",
   },
   robots: {

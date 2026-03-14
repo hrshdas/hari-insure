@@ -4,7 +4,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 export const metadata = {
-  title: "Tax & Money Guide — HariInsurance India",
+  title: "Tax & Money Guide — Hari Insurance India",
   description: "How to use health and life insurance to save tax under sections 80C, 80D, and 10(10D). Old vs new tax regime explained.",
 };
 

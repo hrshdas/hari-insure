@@ -4,7 +4,7 @@ import ArticleLayout from "@/components/ArticleLayout";
 import AdvisorCTA from "@/components/AdvisorCTA";
 
 export const metadata = {
-  title: "Why Do I Need Health Insurance If I'm Healthy? — HariInsurance India",
+  title: "Why Do I Need Health Insurance If I'm Healthy? — Hari Insurance India",
   description: "The top objection answered. Why young, healthy people in India still need health insurance — with real numbers.",
 };
 

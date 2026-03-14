@@ -19,10 +19,7 @@ export default function CTASection() {
         <div className="text-center max-w-3xl mx-auto">
 
           {/* Pill badge */}
-          <div className="inline-flex items-center gap-2 bg-white/10 border border-white/15 backdrop-blur-sm text-white/80 text-xs font-semibold px-4 py-1.5 rounded-full mb-8 tracking-wide uppercase">
-            <span className="w-1.5 h-1.5 rounded-full bg-brand-orange animate-pulse" />
-            Zero enrollment fee — Limited time
-          </div>
+
 
           {/* Headline */}
           <h2
@@ -38,17 +35,17 @@ export default function CTASection() {
           </h2>
 
           <p className="mt-5 text-lg text-white/65 leading-relaxed max-w-xl mx-auto">
-            Join 2 lakh families who trust HariInsurance. Get your free personalized quote in under 2 minutes — no spam, ever.
+            Join 500+ families who trust Hari Insurance for clear, honest insurance guidance.
           </p>
 
           {/* Buttons */}
           <div className="flex flex-col sm:flex-row gap-3.5 justify-center mt-10">
             <Link
-              href="#plans"
+              href="/talk-to-advisor"
               id="cta-primary-btn"
               className="inline-flex items-center justify-center gap-2 bg-brand-orange hover:bg-brand-orange-dark text-white font-bold px-9 py-4 rounded-full text-base shadow-orange-glow hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200 ease-spring"
             >
-              Get Free Quote
+              Talk to a Licensed Advisor
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" aria-hidden="true">
                 <path d="M5 12h14M12 5l7 7-7 7"/>
               </svg>
@@ -67,7 +64,7 @@ export default function CTASection() {
 
           {/* Trust micro-copy */}
           <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 mt-8 text-white/45 text-xs font-medium">
-            {["No credit card required", "Free to compare", "IRDAI approved partners", "Instant policy document"].map((item) => (
+            {["100% Free Education", "No Selling or Solicitation", "IRDAI Governed", "Unbiased Guidance"].map((item) => (
               <span key={item} className="flex items-center gap-1.5">
                 <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" aria-hidden="true">
                   <path d="M20 6L9 17l-5-5"/>

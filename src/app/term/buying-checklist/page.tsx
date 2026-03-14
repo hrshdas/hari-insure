@@ -4,7 +4,7 @@ import ArticleLayout from "@/components/ArticleLayout";
 import AdvisorCTA from "@/components/AdvisorCTA";
 
 export const metadata = {
-  title: "Term Insurance Buying Checklist — 10 Items — HariInsurance India",
+  title: "Term Insurance Buying Checklist — 10 Items — Hari Insurance India",
   description: "10-point checklist to evaluate any term insurance plan — sum assured, claim settlement ratio, riders, and more.",
 };
 

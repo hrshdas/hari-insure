@@ -4,7 +4,7 @@ import ArticleLayout from "@/components/ArticleLayout";
 import AdvisorCTA from "@/components/AdvisorCTA";
 
 export const metadata = {
-  title: "Health Insurance with Pre-Existing Disease — HariInsurance India",
+  title: "Health Insurance with Pre-Existing Disease — Hari Insurance India",
   description: "What happens to your pre-existing disease (PED) in health insurance? Waiting periods, disclosure rules, and what to expect.",
 };
 

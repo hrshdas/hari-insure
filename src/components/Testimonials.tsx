@@ -7,7 +7,7 @@ const testimonials = [
     avatarCls: "bg-brand-green-light text-brand-green",
     rating: 5,
     review:
-      "HariInsurance made buying health insurance completely seamless. I compared 12 plans in 5 minutes and received my policy document instantly. Genuinely the best experience I've had.",
+      "Hari Insurance made buying health insurance completely seamless. I compared 12 plans in 5 minutes and received my policy document instantly. Genuinely the best experience I've had.",
   },
   {
     id: "t2",
@@ -17,7 +17,7 @@ const testimonials = [
     avatarCls: "bg-orange-50 text-brand-orange",
     rating: 5,
     review:
-      "Switching my car insurance through HariInsurance saved me ₹4,200 this year. And when I had a minor accident, their claim support team was hands-down incredible.",
+      "Switching my car insurance through Hari Insurance saved me ₹4,200 this year. And when I had a minor accident, their claim support team was hands-down incredible.",
   },
   {
     id: "t3",
@@ -27,7 +27,7 @@ const testimonials = [
     avatarCls: "bg-purple-50 text-purple-600",
     rating: 5,
     review:
-      "As a doctor I understand insurance deeply — HariInsurance is the most transparent platform I've seen. The term life cover I bought here gives me absolute peace of mind.",
+      "As a doctor I understand insurance deeply — Hari Insurance is the most transparent platform I've seen. The term life cover I bought here gives me absolute peace of mind.",
   },
   {
     id: "t4",
@@ -57,7 +57,7 @@ const testimonials = [
     avatarCls: "bg-orange-50 text-brand-orange",
     rating: 5,
     review:
-      "Zero hidden charges, instant document delivery, and a support team that actually picks up the phone. That's all you need in an insurer and HariInsurance delivers.",
+      "Zero hidden charges, instant document delivery, and a support team that actually picks up the phone. That's all you need in an insurer and Hari Insurance delivers.",
   },
 ];
 
@@ -120,7 +120,7 @@ export default function Testimonials() {
             <span style={{ color: "#16a37f" }}>real peace of mind</span>
           </h2>
           <p className="text-base text-gray-500 max-w-md leading-relaxed">
-            Join 2 lakh+ families who trust HariInsurance for their protection needs.
+            Join 500+ families who trust Hari Insurance for their protection needs.
           </p>
         </div>
       </div>
@@ -146,7 +146,7 @@ export default function Testimonials() {
           </div>
           <span className="font-bold text-gray-800 text-base">4.9</span>
           <span className="text-gray-300">·</span>
-          <span>Based on 18,400+ verified reviews</span>
+          <span>Based on 200 ratings</span>
         </div>
       </div>
     </section>

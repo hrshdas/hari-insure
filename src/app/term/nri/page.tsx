@@ -3,7 +3,7 @@ import Footer from "@/components/Footer";
 import ArticleLayout from "@/components/ArticleLayout";
 
 export const metadata = {
-  title: "Term Insurance for NRIs — HariInsurance India",
+  title: "Term Insurance for NRIs — Hari Insurance India",
   description: "Can NRIs buy term insurance in India? Eligibility, documentation, FEMA rules, and key considerations.",
 };
 

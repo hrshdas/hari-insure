@@ -3,7 +3,7 @@ import Footer from "@/components/Footer";
 import ArticleLayout from "@/components/ArticleLayout";
 
 export const metadata = {
-  title: "Term Insurance for Self-Employed — HariInsurance India",
+  title: "Term Insurance for Self-Employed — Hari Insurance India",
   description: "Guide to term insurance for business owners and freelancers — HLV calculation, income proof, and keyman insurance.",
 };
 

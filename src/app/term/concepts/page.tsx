@@ -4,7 +4,7 @@ import ArticleLayout from "@/components/ArticleLayout";
 import AdvisorCTA from "@/components/AdvisorCTA";
 
 export const metadata = {
-  title: "Term Insurance Concepts — How Much Cover, Riders, Claim Process — HariInsurance India",
+  title: "Term Insurance Concepts — How Much Cover, Riders, Claim Process — Hari Insurance India",
   description: "Term insurance deep dive: how much cover you need, how long to run, riders explained, ROP, and the claim process for nominees.",
 };
 

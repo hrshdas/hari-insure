@@ -4,7 +4,7 @@ import ArticleLayout from "@/components/ArticleLayout";
 import AdvisorCTA from "@/components/AdvisorCTA";
 
 export const metadata = {
-  title: "My Health Insurance Claim Was Rejected — What Now? — HariInsurance India",
+  title: "My Health Insurance Claim Was Rejected — What Now? — Hari Insurance India",
   description: "Step-by-step guide to fighting a rejected health insurance claim in India — internal escalation, IRDAI IGMS, and Insurance Ombudsman.",
 };
 

@@ -3,7 +3,7 @@ import Footer from "@/components/Footer";
 import ArticleLayout from "@/components/ArticleLayout";
 
 export const metadata = {
-  title: "Term Insurance for Women and Homemakers — HariInsurance India",
+  title: "Term Insurance for Women and Homemakers — Hari Insurance India",
   description: "Why women, including homemakers, should have term insurance — and how it works for non-earning family members.",
 };
 

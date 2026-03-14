@@ -10,7 +10,7 @@ const navItems = [
   { label: "Motor", href: "/motor" },
   { label: "Guides", href: "/tax" },
   { label: "Glossary", href: "/glossary" },
-  { label: "Problems", href: "/problems" },
+  { label: "Help", href: "/problems" },
 ];
 
 export default function Navbar() {
@@ -36,7 +36,7 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-14">
           
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-3 group flex-shrink-0" aria-label="HariInsurance India Home">
+          <Link href="/" className="flex items-center gap-3 group flex-shrink-0" aria-label="Hari Insurance India Home">
             <div className="w-9 h-9 rounded-[10px] bg-gradient-to-br from-brand-green to-blue-500 flex items-center justify-center shadow-md transition-transform group-hover:scale-105">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
                 <path d="M12 2L3 7v5c0 5.25 3.75 10.15 9 11.35C17.25 22.15 21 17.25 21 12V7L12 2z" fill="white" fillOpacity="0.95"/>
@@ -74,7 +74,7 @@ export default function Navbar() {
               id="nav-advisor-btn"
               className="hidden md:inline-flex items-center justify-center bg-gray-900 hover:bg-brand-green text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-all duration-200 shadow-sm hover:shadow-md hover:-translate-y-0.5"
             >
-              Talk to Advisor
+              Licensed Advisor
             </Link>
 
             {/* Mobile menu button */}

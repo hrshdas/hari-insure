@@ -1,5 +1,6 @@
 import Link from "next/link";
 import AdvisorCTA from "./AdvisorCTA";
+import LeadForm from "./LeadForm";
 
 interface Breadcrumb {
   label: string;
@@ -74,7 +75,7 @@ export default function ArticleLayout({
 
       {/* Content */}
       <div className="container-max px-4 sm:px-6 lg:px-8 py-10">
-        <div className={`grid gap-8 ${sidebar ? "lg:grid-cols-[1fr_280px]" : ""}`}>
+        <div className={`grid gap-8 lg:grid-cols-[1fr_300px]`}>
           {/* Main content */}
           <article className="prose-article">
             {children}
@@ -111,15 +112,13 @@ export default function ArticleLayout({
             <AdvisorCTA variant="inline" />
           </article>
 
-          {/* Sidebar */}
-          {sidebar && (
-            <aside className="hidden lg:block">
-              <div className="space-y-5">
-                <AdvisorCTA variant="sidebar" />
-                {sidebar}
-              </div>
-            </aside>
-          )}
+          {/* Sidebar — always visible on large screens */}
+          <aside className="hidden lg:block">
+            <div className="space-y-5">
+              <LeadForm />
+              {sidebar && sidebar}
+            </div>
+          </aside>
         </div>
       </div>
     </div>

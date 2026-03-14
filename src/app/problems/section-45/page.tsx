@@ -3,7 +3,7 @@ import Footer from "@/components/Footer";
 import ArticleLayout from "@/components/ArticleLayout";
 
 export const metadata = {
-  title: "Section 45 of Insurance Act — The 3-Year Rule — HariInsurance India",
+  title: "Section 45 of Insurance Act — The 3-Year Rule — Hari Insurance India",
   description: "How Section 45 protects life insurance policyholders from claim rejection after 3 years.",
 };
 

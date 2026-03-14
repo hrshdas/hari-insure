@@ -4,7 +4,7 @@ import ArticleLayout from "@/components/ArticleLayout";
 import AdvisorCTA from "@/components/AdvisorCTA";
 
 export const metadata = {
-  title: "Motor Insurance Concepts — IDV, NCB, Depreciation — HariInsurance India",
+  title: "Motor Insurance Concepts — IDV, NCB, Depreciation — Hari Insurance India",
   description: "Learn motor insurance concepts: IDV (Insured Declared Value), No Claim Bonus (NCB), depreciation rules, and what is covered and excluded.",
 };
 

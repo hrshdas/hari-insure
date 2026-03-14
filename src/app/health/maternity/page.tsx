@@ -4,7 +4,7 @@ import ArticleLayout from "@/components/ArticleLayout";
 import AdvisorCTA from "@/components/AdvisorCTA";
 
 export const metadata = {
-  title: "Maternity Health Insurance Guide — HariInsurance India",
+  title: "Maternity Health Insurance Guide — Hari Insurance India",
   description: "Planning a baby? Guide to maternity coverage in health insurance — waiting periods, what's covered, newborn cover.",
 };
 

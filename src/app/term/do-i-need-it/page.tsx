@@ -3,7 +3,7 @@ import Footer from "@/components/Footer";
 import ArticleLayout from "@/components/ArticleLayout";
 
 export const metadata = {
-  title: "Do I Actually Need Term Insurance? — HariInsurance India",
+  title: "Do I Actually Need Term Insurance? — Hari Insurance India",
   description: "Is term insurance necessary for everyone? A clear breakdown of who needs it, who doesn't, and what happens if you skip it.",
 };
 

@@ -4,7 +4,7 @@ import ArticleLayout from "@/components/ArticleLayout";
 import AdvisorCTA from "@/components/AdvisorCTA";
 
 export const metadata = {
-  title: "What is Term Insurance? — HariInsurance India",
+  title: "What is Term Insurance? — Hari Insurance India",
   description: "Plain-English explainer: what term insurance is, how it works, and why it is the purest form of life cover.",
 };
 

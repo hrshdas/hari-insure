@@ -3,7 +3,7 @@ import Footer from "@/components/Footer";
 import ArticleLayout from "@/components/ArticleLayout";
 
 export const metadata = {
-  title: "Should I Hire a Claim Settlement Agency? — HariInsurance India",
+  title: "Should I Hire a Claim Settlement Agency? — Hari Insurance India",
   description: "An honest look at insurance claim settlement agencies — when they help, when they don't, and free alternatives.",
 };
 

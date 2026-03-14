@@ -4,7 +4,7 @@ import ArticleLayout from "@/components/ArticleLayout";
 import AdvisorCTA from "@/components/AdvisorCTA";
 
 export const metadata = {
-  title: "Health Insurance for Parents (Senior Citizens) — HariInsurance India",
+  title: "Health Insurance for Parents (Senior Citizens) — Hari Insurance India",
   description: "Complete guide to buying health insurance for parents in India — what to look for, which plans work, and how to deal with pre-existing conditions.",
 };
 

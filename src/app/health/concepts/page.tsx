@@ -4,7 +4,7 @@ import ArticleLayout from "@/components/ArticleLayout";
 import AdvisorCTA from "@/components/AdvisorCTA";
 
 export const metadata = {
-  title: "Health Insurance Concepts Explained — HariInsurance India",
+  title: "Health Insurance Concepts Explained — Hari Insurance India",
   description: "Co-payment, room rent limits, sub-limits, waiting periods, restoration benefit, NCB — all key health insurance concepts explained simply.",
 };
 

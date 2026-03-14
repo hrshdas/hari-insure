@@ -3,7 +3,7 @@ import Footer from "@/components/Footer";
 import ArticleLayout from "@/components/ArticleLayout";
 
 export const metadata = {
-  title: "Nominee Guide — How to Claim Life Insurance — HariInsurance India",
+  title: "Nominee Guide — How to Claim Life Insurance — Hari Insurance India",
   description: "A plain-English guide for nominees on how to file a term insurance claim, what documents are needed, and what timelines to expect.",
 };
 

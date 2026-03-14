@@ -27,9 +27,9 @@ const steps = [
   {
     id: "step-3",
     step: "Step 3",
-    title: "Get Insured Instantly",
-    desc: "Pay securely online and receive your policy document in your inbox instantly.",
-    cta: "Get a Quote",
+    title: "Get Guidance",
+    desc: "Connect with a licensed advisor who explains your options clearly — no pressure, no jargon.",
+    cta: "Talk to Advisor",
     ctaHref: "#cta",
     img: "/term-icon.png",
     gradient: "linear-gradient(135deg, #1d4ed8 0%, #38bdf8 100%)",
@@ -45,11 +45,11 @@ export default function HowItWorks() {
         <div className="flex flex-col items-center text-center gap-2 mb-10">
           <span className="eyebrow">Simple Process</span>
           <h2 id="how-heading" className="heading-lg text-center">
-            Insured in{" "}
-            <span className="text-gradient-green">3 easy steps</span>
+            Your insurance journey,{" "}
+            <span className="text-gradient-green">simplified</span>
           </h2>
           <p className="body-lg text-center max-w-md">
-            No confusing paperwork. Get covered in the time it takes to make a cup of chai.
+            From understanding your needs to getting expert guidance — we make it clear and stress-free.
           </p>
         </div>
 

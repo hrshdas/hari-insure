@@ -7,15 +7,14 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 lg:gap-8 border-b border-white/[0.07] pb-12">
           
           <div className="lg:col-span-2">
-            <Link href="/" className="inline-flex items-center gap-2.5 mb-5 pb-1" aria-label="HariInsurance India">
+            <Link href="/" className="inline-flex items-center gap-2.5 mb-5 pb-1" aria-label="Hari Insurance India">
               <span className="text-2xl font-bold font-outfit text-white tracking-tight">
-                HariInsurance
+                Hari Insurance
               </span>
             </Link>
             <p className="text-white/50 text-sm leading-relaxed max-w-sm mb-6">
               India&apos;s most unbiased insurance education platform. We don&apos;t spam, we don&apos;t push junk policies, and we believe protecting your family should be simple.
             </p>
-            <p className="text-sm font-medium text-brand-orange">IRDAI Certified Advisors.</p>
           </div>
 
           <div>
@@ -25,7 +24,7 @@ export default function Footer() {
               <li><Link href="/term" className="text-white/40 hover:text-white transition-colors text-sm">Term & Life</Link></li>
               <li><Link href="/motor" className="text-white/40 hover:text-white transition-colors text-sm">Motor Insurance</Link></li>
               <li><Link href="/tax" className="text-white/40 hover:text-white transition-colors text-sm">Tax & Money</Link></li>
-              <li><Link href="/problems" className="text-white/40 hover:text-white transition-colors text-sm">Problems & Rights</Link></li>
+              <li><Link href="/problems" className="text-white/40 hover:text-white transition-colors text-sm">Help</Link></li>
             </ul>
           </div>
 
@@ -42,7 +41,8 @@ export default function Footer() {
           <div>
             <h4 className="text-white/60 font-semibold mb-5 font-outfit uppercase tracking-wider text-xs">Connect</h4>
             <ul className="space-y-3">
-              <li><Link href="/talk-to-advisor" className="text-brand-green hover:text-white transition-colors font-medium text-sm">Talk to an Advisor</Link></li>
+              <li><Link href="/about" className="text-white/40 hover:text-white transition-colors text-sm">About Us</Link></li>
+              <li><Link href="/talk-to-advisor" className="text-brand-green hover:text-white transition-colors font-medium text-sm">Talk to a Licensed Advisor</Link></li>
               <li><span className="text-white/40 text-sm block mt-2">hello@hariinsurance.in</span></li>
             </ul>
           </div>
@@ -51,7 +51,7 @@ export default function Footer() {
         
         <div className="mt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-white/30 text-xs">
-            © {new Date().getFullYear()} HariInsurance India. All rights reserved. 
+            © {new Date().getFullYear()} Hari Insurance India. All rights reserved. 
           </p>
           <p className="text-white/30 text-xs">
             Insurance is the subject matter of solicitation. Please read policy documents carefully.

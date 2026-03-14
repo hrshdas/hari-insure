@@ -3,7 +3,7 @@
 const trustItems = [
   {
     title: "IRDAI Regulated",
-    description: "Hari Insure operates under strict guidelines set by the Insurance Regulatory and Development Authority of India (IRDAI), ensuring your interests are always protected.",
+    description: "Hari Insurance operates under strict guidelines set by the Insurance Regulatory and Development Authority of India (IRDAI), ensuring your interests are always protected.",
     icon: (
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
         <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />

@@ -4,7 +4,7 @@ import ArticleLayout from "@/components/ArticleLayout";
 import AdvisorCTA from "@/components/AdvisorCTA";
 
 export const metadata = {
-  title: "Health Insurer Claim Settlement Ratios (2025-26) — HariInsurance India",
+  title: "Health Insurer Claim Settlement Ratios (2025-26) — Hari Insurance India",
   description: "Latest retail health insurance claim settlement ratios extracted from IRDAI annual reports. Compare top insurers.",
 };
 

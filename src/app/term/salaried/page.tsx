@@ -3,7 +3,7 @@ import Footer from "@/components/Footer";
 import ArticleLayout from "@/components/ArticleLayout";
 
 export const metadata = {
-  title: "Term Insurance for Salaried Employees — HariInsurance India",
+  title: "Term Insurance for Salaried Employees — Hari Insurance India",
   description: "How to choose the right term plan as a salaried employee — cover amount, EPF consideration, and employer insurance gaps.",
 };
 

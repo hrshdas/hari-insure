@@ -8,9 +8,9 @@ const steps = [
         bg: "transparent",
         iconSize: 100,
         title: "Visit",
-        subtitle: "Come to HariInsurance",
+        subtitle: "Come to Hari Insurance",
         icon: (
-            <Image src="/visit-icon.png" alt="Visit HariInsurance" width={100} height={100} className="object-contain" />
+            <Image src="/visit-icon.png" alt="Visit Hari Insurance" width={100} height={100} className="object-contain" />
         ),
     },
     {
@@ -43,10 +43,10 @@ const steps = [
         color: "#9333ea",
         bg: "transparent",
         iconSize: 100,
-        title: "Purchase",
-        subtitle: "Insure in minutes",
+        title: "Decide",
+        subtitle: "Make an informed choice",
         icon: (
-            <Image src="/purchase-icon.png" alt="Purchase insurance" width={100} height={100} className="object-contain" />
+            <Image src="/purchase-icon.png" alt="Make an informed decision" width={100} height={100} className="object-contain" />
         ),
     },
     {
@@ -87,10 +87,10 @@ export default function HariAdvantage() {
                         className="text-[2rem] sm:text-[2.4rem] font-bold tracking-tight leading-tight font-[family-name:var(--font-nunito)]"
                         style={{ color: "#0d3d35" }}
                     >
-                        The HariInsurance Advantage
+                        The Hari Insurance Advantage
                     </h2>
                     <p className="mt-2 text-sm text-brand-muted max-w-xl leading-relaxed">
-                        When you buy insurance from us, you get more than just financial safety — you get expert guidance, transparent pricing, and lifelong support at every step.
+                        We provide free, unbiased insurance education — no selling, no pressure, just clarity at every step.
                     </p>
                     <div className="mt-2 w-12 h-[3px] rounded-full bg-brand-orange" />
                 </div>

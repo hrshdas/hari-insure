@@ -3,7 +3,7 @@ import Footer from "@/components/Footer";
 import ArticleLayout from "@/components/ArticleLayout";
 
 export const metadata = {
-  title: "Term Insurance for Smokers — HariInsurance India",
+  title: "Term Insurance for Smokers — Hari Insurance India",
   description: "How being a smoker affects your term insurance premium and what you can do to manage costs.",
 };
 

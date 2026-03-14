@@ -4,7 +4,7 @@ import ArticleLayout from "@/components/ArticleLayout";
 import AdvisorCTA from "@/components/AdvisorCTA";
 
 export const metadata = {
-  title: "Health Insurance Plan Comparison 2026 — HariInsurance India",
+  title: "Health Insurance Plan Comparison 2026 — Hari Insurance India",
   description: "Feature-by-feature comparison of top health insurance plans in India 2026 — educational, no selling.",
 };
 

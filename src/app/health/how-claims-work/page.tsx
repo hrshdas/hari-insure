@@ -4,7 +4,7 @@ import ArticleLayout from "@/components/ArticleLayout";
 import AdvisorCTA from "@/components/AdvisorCTA";
 
 export const metadata = {
-  title: "How Does the Health Insurance Claim Process Work? — HariInsurance India",
+  title: "How Does the Health Insurance Claim Process Work? — Hari Insurance India",
   description: "Step-by-step guide to the health insurance claim process in India — cashless and reimbursement claims explained.",
 };
 

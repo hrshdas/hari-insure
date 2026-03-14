@@ -4,7 +4,7 @@ import ArticleLayout from "@/components/ArticleLayout";
 import AdvisorCTA from "@/components/AdvisorCTA";
 
 export const metadata = {
-  title: "How to Port Health Insurance Without Losing Waiting Period Credit — HariInsurance India",
+  title: "How to Port Health Insurance Without Losing Waiting Period Credit — Hari Insurance India",
   description: "Complete guide to porting health insurance in India — IRDAI rules, how to keep waiting period credit, and when to port.",
 };
 

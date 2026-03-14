@@ -4,7 +4,7 @@ import ArticleLayout from "@/components/ArticleLayout";
 import AdvisorCTA from "@/components/AdvisorCTA";
 
 export const metadata = {
-  title: "Family Floater vs Individual Plans — Health Insurance for Families — HariInsurance India",
+  title: "Family Floater vs Individual Plans — Health Insurance for Families — Hari Insurance India",
   description: "Should you buy a family floater or individual plans? Complete guide with examples and recommendations for Indian families.",
 };
 

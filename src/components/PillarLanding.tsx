@@ -43,7 +43,7 @@ const LEVEL_META = {
   problem: {
     label: "I Have a Problem",
     sublabel: "Rejected claim? Rights? Get help here.",
-    indicator: "!",
+    indicator: "?",
     borderColor: "#ef4444",
     bgColor: "#fef2f2",
     textColor: "#ef4444",
@@ -90,7 +90,7 @@ export default function PillarLanding({
 
           {/* Progress cards */}
           <div className="flex items-center gap-2 mt-6 overflow-x-auto pb-1">
-            {(["start", "learn", "decide"] as const).filter(level =>
+            {(["start", "learn", "decide", "problem"] as const).filter(level =>
               sections.some(s => s.level === level)
             ).map((level, i, arr) => {
               const meta = LEVEL_META[level];

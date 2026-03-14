@@ -4,7 +4,7 @@ import ArticleLayout from "@/components/ArticleLayout";
 import AdvisorCTA from "@/components/AdvisorCTA";
 
 export const metadata = {
-  title: "Third-Party vs Own Damage vs Comprehensive Motor Insurance — HariInsurance India",
+  title: "Third-Party vs Own Damage vs Comprehensive Motor Insurance — Hari Insurance India",
   description: "The definitive guide to the three types of motor insurance in India — what each covers, when you need which, and which is right for you.",
 };
 

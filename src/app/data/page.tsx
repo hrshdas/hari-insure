@@ -4,7 +4,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 export const metadata = {
-  title: "Data & Comparisons — HariInsurance India",
+  title: "Data & Comparisons — Hari Insurance India",
   description: "Claim settlement ratios, premium inflation data, and objective plan comparisons built from IRDAI data.",
 };
 

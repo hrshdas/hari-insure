@@ -4,7 +4,7 @@ import ArticleLayout from "@/components/ArticleLayout";
 import AdvisorCTA from "@/components/AdvisorCTA";
 
 export const metadata = {
-  title: "Buying Health Insurance for Myself — HariInsurance India",
+  title: "Buying Health Insurance for Myself — Hari Insurance India",
   description: "Complete guide to buying individual health insurance in India — what to look for, what to avoid, ideal sum insured.",
 };
 
