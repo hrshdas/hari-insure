@@ -74,7 +74,7 @@ export default function ForParents() {
           </p>
 
           <div className="callout">
-            <p className="text-sm font-semibold text-brand-ink mb-1">⚠️ Don&apos;t wait until they have a serious diagnosis</p>
+            <p className="text-sm font-semibold text-brand-ink mb-1">Don&apos;t wait until they have a serious diagnosis</p>
             <p className="text-sm text-brand-muted">
               Buy when they are relatively healthy. Once a serious condition like cancer or a major cardiac issue is diagnosed, getting coverage becomes extremely difficult or impossible.
             </p>

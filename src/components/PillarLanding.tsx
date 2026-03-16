@@ -41,9 +41,9 @@ const LEVEL_META = {
     textColor: "#8b5cf6",
   },
   problem: {
-    label: "I Have a Problem",
+    label: "Need Help",
     sublabel: "Rejected claim? Rights? Get help here.",
-    indicator: "?",
+    indicator: "4",
     borderColor: "#ef4444",
     bgColor: "#fef2f2",
     textColor: "#ef4444",

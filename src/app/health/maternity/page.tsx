@@ -54,7 +54,7 @@ export default function Maternity() {
           </table>
 
           <div className="callout">
-            <p className="text-sm font-semibold text-brand-ink mb-1">⚠️ These limits may not cover actual costs</p>
+            <p className="text-sm font-semibold text-brand-ink mb-1">These limits may not cover actual costs</p>
             <p className="text-sm text-brand-muted">A normal delivery at a good private hospital in a metro costs ₹60,000–1,50,000. Many insurance limits fall short. Budget accordingly and factor in out-of-pocket costs.</p>
           </div>
 

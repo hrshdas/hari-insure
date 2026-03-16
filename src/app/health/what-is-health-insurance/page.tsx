@@ -84,7 +84,7 @@ export default function WhatIsHealthInsurance() {
           </p>
 
           <div className="callout">
-            <p className="text-sm font-semibold text-brand-ink mb-1">⚠️ Don&apos;t rely only on employer cover</p>
+            <p className="text-sm font-semibold text-brand-ink mb-1">Don&apos;t rely only on employer cover</p>
             <p className="text-sm text-brand-muted">
               If you change jobs or get laid off, your employer group cover disappears immediately. Always have your own personal policy.
             </p>

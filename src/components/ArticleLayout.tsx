@@ -10,7 +10,7 @@ interface Breadcrumb {
 interface ArticleLayoutProps {
   children: React.ReactNode;
   breadcrumbs?: Breadcrumb[];
-  title: string;
+  title: React.ReactNode;
   readTime?: string;
   pillarColor?: string;
   sidebar?: React.ReactNode;
@@ -121,6 +121,21 @@ export default function ArticleLayout({
           </aside>
         </div>
       </div>
+      
+      {/* Bottom wide lead form above footer */}
+      <section className="bg-brand-green-light/30 py-16 border-t border-brand-green/10 mt-10">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <div className="text-center mb-8">
+            <h2 className="text-2xl md:text-3xl font-bold text-brand-ink mb-3 font-outfit">
+              Need Help Choosing?
+            </h2>
+            <p className="text-brand-muted text-lg max-w-2xl mx-auto">
+              Our licensed advisors can help you navigate policies and find the best coverage for your family.
+            </p>
+          </div>
+          <LeadForm variant="large" />
+        </div>
+      </section>
     </div>
   );
 }

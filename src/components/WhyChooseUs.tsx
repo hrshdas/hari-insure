@@ -78,7 +78,7 @@ export default function WhyChooseUs() {
       <div className="max-w-5xl mx-auto">
         {/* Header */}
         <div className="flex flex-col items-center text-center gap-2 mb-8">
-          <span className="eyebrow">Why Hari Insurance?</span>
+          <span className="eyebrow">Why <span style={{ color: "#0d3d35" }}>Hari</span><span style={{ color: "#16a37f" }}>Insurance</span>?</span>
           <h2 id="why-heading" className="heading-lg text-center">
             Insurance made{" "}
             <span className="text-gradient-green">simple and smart</span>

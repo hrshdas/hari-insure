@@ -45,7 +45,7 @@ export default function InsuranceCostGuide() {
             Insurance Cost Guide
           </h2>
           <p className="text-brand-muted max-w-2xl mx-auto">
-            Get an idea of expected annual premiums for various insurance types. Plan your budget effectively for your family&apos;s protection.
+            Get an <strong>idea</strong> of <strong>expected</strong> annual premiums for various insurance types. Plan your budget effectively for your family&apos;s protection.
           </p>
         </div>
 

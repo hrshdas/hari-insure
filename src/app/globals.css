@@ -223,14 +223,14 @@
   font-weight: 600;
 }
 
-.prose-article a {
+.prose-article a:not([class*="btn-"]) {
   color: #16a37f;
   text-decoration: underline;
   text-decoration-color: rgba(22,163,127,0.3);
   text-underline-offset: 2px;
   transition: color 150ms;
 }
-.prose-article a:hover { color: #0e7a5e; }
+.prose-article a:not([class*="btn-"]):hover { color: #0e7a5e; }
 
 .prose-article blockquote {
   border-left: 3px solid #16a37f;

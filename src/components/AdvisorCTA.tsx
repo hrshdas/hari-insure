@@ -11,17 +11,17 @@ export default function AdvisorCTA({ variant = "banner" }: { variant?: "banner" 
         </div>
         <h3 className="text-sm font-bold text-brand-ink mb-1">Still confused?</h3>
         <p className="text-xs text-brand-muted leading-relaxed mb-4">
-          Connect with an IRDAI-licensed advisor. Free. No pressure. No selling.
+          Connect with a licensed advisor. Free and unbiased guidance.
         </p>
         <Link
-          href="/advisor"
+          href="/talk-to-advisor"
           className="btn-primary w-full text-xs"
           id="advisor-cta-sidebar"
         >
           Talk to an Advisor
         </Link>
         <p className="text-[10px] text-brand-muted text-center mt-2">
-          IRDAI-licensed · 100% free · No commissions
+          Licensed advisor · 100% free · No commissions
         </p>
       </div>
     );
@@ -37,9 +37,9 @@ export default function AdvisorCTA({ variant = "banner" }: { variant?: "banner" 
         </div>
         <div className="flex-1">
           <p className="text-sm font-semibold text-brand-ink">Still confused? Talk to a licensed advisor — free.</p>
-          <p className="text-xs text-brand-muted mt-0.5">IRDAI-licensed. No selling. No pressure.</p>
+          <p className="text-xs text-brand-muted mt-0.5">Licensed advisor · 100% free.</p>
         </div>
-        <Link href="/advisor" className="btn-primary text-xs flex-shrink-0" id="advisor-cta-inline">
+        <Link href="/talk-to-advisor" className="btn-primary text-xs flex-shrink-0" id="advisor-cta-inline">
           Talk Free
         </Link>
       </div>
@@ -57,12 +57,12 @@ export default function AdvisorCTA({ variant = "banner" }: { variant?: "banner" 
         </div>
         <h2 className="text-2xl font-bold text-white mb-2">Still confused?</h2>
         <p className="text-white/60 text-sm mb-6 max-w-lg mx-auto">
-          Connect with an IRDAI-licensed advisor. Get personalised guidance — completely free, no pressure, no commissions.
+          Connect with a licensed advisor. Get personalised guidance — completely free, no commissions.
         </p>
-        <Link href="/advisor" className="btn-primary" id="advisor-cta-banner">
+        <Link href="/talk-to-advisor" className="btn-primary" id="advisor-cta-banner">
           Talk to a Licensed Advisor — Free
         </Link>
-        <p className="text-white/30 text-xs mt-3">IRDAI-licensed advisors · 100% free · No commissions</p>
+        <p className="text-white/30 text-xs mt-3">Licensed advisors · 100% free · No commissions</p>
       </div>
     </section>
   );

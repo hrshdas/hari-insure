@@ -28,7 +28,7 @@ const steps = [
     id: "step-3",
     step: "Step 3",
     title: "Get Guidance",
-    desc: "Connect with a licensed advisor who explains your options clearly — no pressure, no jargon.",
+    desc: "Connect with a licensed advisor who explains your options clearly and without jargon.",
     cta: "Talk to Advisor",
     ctaHref: "#cta",
     img: "/term-icon.png",

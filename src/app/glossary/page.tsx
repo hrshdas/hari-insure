@@ -88,12 +88,12 @@ export default function Glossary() {
               Insurance Glossary
             </h1>
             <p className="text-xl text-brand-muted">
-              The A-Z dictionary of Indian insurance terms translated into plain English. No jargon allowed.
+              The A-Z dictionary of Indian insurance terms translated into plain English.
             </p>
           </div>
 
           <div className="space-y-6">
-            {terms.sort((a,b) => a.term.localeCompare(b.term)).map((item) => (
+            {terms.sort((a, b) => a.term.localeCompare(b.term)).map((item) => (
               <div key={item.term} className="bg-white p-6 rounded-2xl shadow-sm border border-brand-green/10">
                 <h3 className="text-xl font-bold text-brand-ink mb-2">
                   {item.term}
@@ -108,7 +108,7 @@ export default function Glossary() {
           <div className="mt-16 bg-brand-green/10 rounded-2xl p-8 text-center border border-brand-green/20">
             <h2 className="text-2xl font-bold text-brand-ink mb-3 font-outfit">Can&apos;t find a term?</h2>
             <p className="text-brand-muted mb-6">Our experts can explain your policy document line by line.</p>
-            <a 
+            <a
               href="/talk-to-advisor"
               className="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-full text-white bg-brand-green hover:bg-brand-green-hover transition-colors shadow-sm"
             >

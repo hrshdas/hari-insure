@@ -57,9 +57,7 @@ const journeyCards = [
     iconBg: "#f3e8ff",
     icon: (
       <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-        <circle cx="12" cy="12" r="10" />
-        <line x1="12" y1="8" x2="12" y2="12" />
-        <line x1="12" y1="16" x2="12.01" y2="16" />
+        <path d="M20 6L9 17l-5-5" />
       </svg>
     ),
   },
@@ -71,34 +69,12 @@ const journeyCards = [
     accentColor: "#e11d48",
     iconBg: "#ffe4e6",
     icon: (
-      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-        <circle cx="12" cy="12" r="10" />
-        <path d="M16 16s-1.5-2-4-2-4 2-4 2" />
-        <line x1="9" y1="9" x2="9.01" y2="9" />
-        <line x1="15" y1="9" x2="15.01" y2="9" />
-      </svg>
+      <span style={{ fontSize: "22px", fontWeight: 800, lineHeight: 1 }}>?</span>
     ),
   },
 ];
 
 const trustBadges = [
-  {
-    label: "IRDAI Governed",
-    icon: (
-      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#2563eb" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
-      </svg>
-    ),
-  },
-  {
-    label: "No Selling, Pure Education",
-    icon: (
-      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#f97316" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />
-        <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
-      </svg>
-    ),
-  },
   {
     label: "100% Free & Unbiased",
     icon: (
@@ -190,7 +166,7 @@ export default function HeroSection() {
 
         {/* Badge */}
         <div className="inline-flex items-center gap-2 bg-[#d1fae5]/70 border border-[#6ee7b7]/40 px-4 py-1.5 rounded-full mb-10">
-          <span className="text-[11px] font-extrabold uppercase tracking-[0.18em] text-[#065f46]">Hari Insurance India</span>
+          <span className="text-[11px] font-extrabold uppercase tracking-[0.18em]"><span className="text-[#0d3d35]">Hari</span><span className="text-[#16a37f]">Insurance</span> <span className="text-[#065f46]">India</span></span>
           <span className="text-[11px] text-[#065f46]/60 font-medium">— Free Insurance Education</span>
         </div>
 
@@ -210,7 +186,7 @@ export default function HeroSection() {
 
         {/* Subheadline */}
         <p className="text-center text-lg sm:text-xl text-brand-muted leading-relaxed max-w-xl mb-16">
-          Plain-English guides for every insurance question — no jargon, no sales, no pressure.
+          Plain-English guides for every insurance question — clear, honest, and unbiased.
         </p>
 
         {/* Section label */}
@@ -255,8 +231,8 @@ export default function HeroSection() {
           </svg>
           Talk to a Licensed Advisor — Free
         </Link>
-        <p className="mt-4 text-[11px] font-semibold uppercase tracking-widest text-[#0d3d35]/35">
-          IRDAI-licensed. No pressure. No sales.
+        <p className="mt-3 text-[11px] font-semibold uppercase tracking-widest text-[#0d3d35]/35">
+          Licensed Advisor
         </p>
       </div>
 

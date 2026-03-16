@@ -2,14 +2,14 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="bg-brand-ink text-white py-16 border-t border-brand-green/20">
+    <footer className="bg-brand-ink text-white py-16 border-t border-brand-green/20 mt-auto">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 lg:gap-8 border-b border-white/[0.07] pb-12">
           
           <div className="lg:col-span-2">
             <Link href="/" className="inline-flex items-center gap-2.5 mb-5 pb-1" aria-label="Hari Insurance India">
-              <span className="text-2xl font-bold font-outfit text-white tracking-tight">
-                Hari Insurance
+              <span className="text-2xl font-bold font-outfit tracking-tight">
+                <span className="text-white">Hari</span><span className="text-brand-green">Insurance</span>
               </span>
             </Link>
             <p className="text-white/50 text-sm leading-relaxed max-w-sm mb-6">
@@ -20,6 +20,7 @@ export default function Footer() {
           <div>
             <h4 className="text-white/60 font-semibold mb-5 font-outfit uppercase tracking-wider text-xs">Pillars</h4>
             <ul className="space-y-3">
+              <li><Link href="/about" className="text-white/40 hover:text-white transition-colors text-sm">About Us</Link></li>
               <li><Link href="/health" className="text-white/40 hover:text-white transition-colors text-sm">Health Insurance</Link></li>
               <li><Link href="/term" className="text-white/40 hover:text-white transition-colors text-sm">Term & Life</Link></li>
               <li><Link href="/motor" className="text-white/40 hover:text-white transition-colors text-sm">Motor Insurance</Link></li>
@@ -51,7 +52,7 @@ export default function Footer() {
         
         <div className="mt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-white/30 text-xs">
-            © {new Date().getFullYear()} Hari Insurance India. All rights reserved. 
+            © {new Date().getFullYear()} <span className="text-white/50">Hari</span><span className="text-brand-green/60">Insurance</span> India. All rights reserved.
           </p>
           <p className="text-white/30 text-xs">
             Insurance is the subject matter of solicitation. Please read policy documents carefully.

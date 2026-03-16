@@ -35,7 +35,7 @@ export default function CTASection() {
           </h2>
 
           <p className="mt-5 text-lg text-white/65 leading-relaxed max-w-xl mx-auto">
-            Join 500+ families who trust Hari Insurance for clear, honest insurance guidance.
+            Join 500+ families who trust <span className="font-bold text-black">Hari </span><span className="font-bold text-brand-green">Insurance</span> for clear, honest insurance guidance.
           </p>
 
           {/* Buttons */}
@@ -64,7 +64,7 @@ export default function CTASection() {
 
           {/* Trust micro-copy */}
           <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 mt-8 text-white/45 text-xs font-medium">
-            {["100% Free Education", "No Selling or Solicitation", "IRDAI Governed", "Unbiased Guidance"].map((item) => (
+            {["100% Free Education", "Unbiased Guidance"].map((item) => (
               <span key={item} className="flex items-center gap-1.5">
                 <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" aria-hidden="true">
                   <path d="M20 6L9 17l-5-5"/>

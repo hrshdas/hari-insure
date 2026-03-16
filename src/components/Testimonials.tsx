@@ -120,7 +120,7 @@ export default function Testimonials() {
             <span style={{ color: "#16a37f" }}>real peace of mind</span>
           </h2>
           <p className="text-base text-gray-500 max-w-md leading-relaxed">
-            Join 500+ families who trust Hari Insurance for their protection needs.
+            Join 500+ families who trust <span className="font-bold text-black">Hari </span><span className="font-bold text-brand-green">Insurance</span> for their protection needs.
           </p>
         </div>
       </div>

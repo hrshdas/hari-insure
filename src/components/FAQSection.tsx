@@ -4,12 +4,12 @@ import { useState } from "react";
 
 const faqs = [
     {
-        q: "What types of insurance does Hari Insurance offer?",
+        q: <>What types of insurance does <span className="font-bold text-black">Hari </span><span className="font-bold text-brand-green">Insurance</span> offer?</>,
         a: "Hari Insurance offers a comprehensive range of policies including Health Insurance, Life Insurance, Term Plans, Motor Insurance, Family Floater Plans, and Investment-linked plans — all from India's top insurers.",
     },
     {
         q: "How do I choose the right insurance plan for my family?",
-        a: "Our digital advisor helps you compare plans side-by-side based on your age, income, health history, and coverage needs. You can also speak to one of our experts for personalised guidance at zero cost.",
+        a: "Our licensed advisor helps you compare plans side-by-side based on your age, income, health history, and coverage needs. You can also speak to one of our experts for personalised guidance at zero cost.",
     },
     {
         q: "Is my personal data safe with Hari Insurance?",

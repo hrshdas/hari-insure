@@ -9,7 +9,7 @@ export default function ComplianceDisclaimer() {
             <div className="text-center md:text-left">
               <h4 className="text-lg font-bold text-brand-ink mb-2">Compliance & Educational Disclaimer</h4>
               <p className="text-sm text-brand-muted leading-relaxed">
-                Hari Insurance is an educational platform designed to provide structured information about insurance products and regulations in India. 
+                <span className="font-semibold text-brand-ink">Hari</span><span className="font-semibold text-brand-green">Insurance</span> is an educational platform designed to provide structured information about insurance products and regulations in India.
                 <strong> Please note that this website does not directly sell insurance policies nor does it act as an insurance brokerage.</strong> 
                 The content provided is for informational purposes only and should not be construed as professional financial advice. 
                 Always compare plans and read policy documents carefully before making a purchase. 
@@ -20,7 +20,7 @@ export default function ComplianceDisclaimer() {
           
           <div className="mt-8 text-center">
             <p className="text-xs text-brand-muted/70">
-              &copy; {new Date().getFullYear()} Hari Insurance. All rights reserved. | Licensed Information Partner
+              &copy; {new Date().getFullYear()} <strong>Hari</strong><span className="text-brand-green font-bold">Insurance</span>. All rights reserved. | Licensed Information Partner
             </p>
           </div>
         </div>

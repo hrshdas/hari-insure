@@ -71,7 +71,7 @@ export default function InsuranceLearningCenter() {
             Insurance Learning Center
           </h2>
           <p className="text-brand-muted max-w-2xl mx-auto">
-            Demystifying insurance concepts so you can make informed decisions for your family&apos;s security.
+            Free insurance guides written in plain English, so you can understand your options and make the right decision for your family.
           </p>
         </div>
 
@@ -81,9 +81,8 @@ export default function InsuranceLearningCenter() {
             return (
               <div
                 key={index}
-                className={`group bg-brand-beige rounded-3xl p-8 transition-all duration-300 border-2 ${
-                  isExpanded ? "border-brand-green ring-1 ring-brand-green/20" : "border-transparent hover:border-brand-green/30"
-                } cursor-pointer shadow-sm hover:shadow-md`}
+                className={`group bg-brand-beige rounded-3xl p-8 transition-all duration-300 border-2 ${isExpanded ? "border-brand-green ring-1 ring-brand-green/20" : "border-transparent hover:border-brand-green/30"
+                  } cursor-pointer shadow-sm hover:shadow-md`}
                 onClick={() => setExpandedIndex(isExpanded ? null : index)}
               >
                 <div className="flex items-start justify-between mb-4">
@@ -100,12 +99,12 @@ export default function InsuranceLearningCenter() {
                 <h3 className="text-xl font-bold text-brand-ink mb-3 group-hover:text-brand-green transition-colors">
                   {item.title}
                 </h3>
-                
+
                 <p className="text-brand-muted text-sm leading-relaxed mb-4">
                   {item.summary}
                 </p>
 
-                <div 
+                <div
                   className={`grid transition-all duration-300 ease-in-out ${isExpanded ? "grid-rows-[1fr] opacity-100 mt-4" : "grid-rows-[0fr] opacity-0"}`}
                 >
                   <div className="overflow-hidden">

@@ -87,10 +87,10 @@ export default function HariAdvantage() {
                         className="text-[2rem] sm:text-[2.4rem] font-bold tracking-tight leading-tight font-[family-name:var(--font-nunito)]"
                         style={{ color: "#0d3d35" }}
                     >
-                        The Hari Insurance Advantage
+                        The <span style={{ color: "#0d3d35" }}>Hari</span><span style={{ color: "#16a37f" }}>Insurance</span> Advantage
                     </h2>
                     <p className="mt-2 text-sm text-brand-muted max-w-xl leading-relaxed">
-                        We provide free, unbiased insurance education — no selling, no pressure, just clarity at every step.
+                        We provide free, unbiased insurance education — with complete clarity at every step.
                     </p>
                     <div className="mt-2 w-12 h-[3px] rounded-full bg-brand-orange" />
                 </div>
