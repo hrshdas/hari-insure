@@ -173,7 +173,7 @@ export default function HeroSection() {
         {/* Headline */}
         <h1
           id="hero-heading"
-          className="text-[3rem] sm:text-[4rem] lg:text-[5rem] font-extrabold tracking-tight leading-[1.06] text-center mb-6"
+          className="text-[1.75rem] min-[375px]:text-[2rem] sm:text-[4rem] lg:text-[5rem] font-extrabold tracking-tight leading-[1.06] text-center mb-6"
           style={{
             color: "#0d3d35",
             fontFamily:
@@ -203,7 +203,7 @@ export default function HeroSection() {
             ))}
           </div>
           {/* Row 2 — 2 cards centered */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-[calc(66.66%+8px)] mx-auto w-full">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:max-w-[calc(66.66%+8px)] mx-auto w-full">
             {journeyCards.slice(3).map((card) => (
               <JourneyCard key={card.id} card={card} />
             ))}

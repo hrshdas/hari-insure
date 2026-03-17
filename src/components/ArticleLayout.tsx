@@ -1,6 +1,7 @@
 import Link from "next/link";
 import AdvisorCTA from "./AdvisorCTA";
 import LeadForm from "./LeadForm";
+import PopupLeadForm from "./PopupLeadForm";
 
 interface Breadcrumb {
   label: string;
@@ -136,6 +137,9 @@ export default function ArticleLayout({
           <LeadForm variant="large" />
         </div>
       </section>
+      
+      {/* Delayed pop-up lead form */}
+      <PopupLeadForm />
     </div>
   );
 }
