@@ -46,7 +46,13 @@ export default function Glossary() {
     },
     {
       term: "PED (Pre-Existing Disease)",
-      def: "Any medical condition you had signs, symptoms, or treatment for in the 48 months before buying a policy. E.g., diabetes, asthma. Must be disclosed honestly.",
+      def: (
+        <div className="space-y-4">
+          <p>Any medical condition that was diagnosed, treated, or for which symptoms existed before the policy start date. Must be disclosed honestly at the time of purchase.</p>
+          <p>Per IRDAI (Insurance Products) Regulations 2024: The maximum waiting period any insurer can impose for pre-existing diseases is 36 months — reduced from the earlier standard of up to 48 months.</p>
+          <p>After the moratorium period of 60 continuous months (5 years) with any insurer, no claim can be rejected on grounds of non-disclosure of any health condition — except in cases of proven fraud.</p>
+        </div>
+      ),
     },
     {
       term: "Portability",
@@ -98,9 +104,9 @@ export default function Glossary() {
                 <h3 className="text-xl font-bold text-brand-ink mb-2">
                   {item.term}
                 </h3>
-                <p className="text-brand-muted leading-relaxed">
+                <div className="text-brand-muted leading-relaxed">
                   {item.def}
-                </p>
+                </div>
               </div>
             ))}
           </div>

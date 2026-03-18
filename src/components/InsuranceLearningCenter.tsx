@@ -5,8 +5,13 @@ import { useState } from "react";
 const learningContent = [
   {
     title: "What is Term Insurance",
-    summary: "Term insurance is the simplest and most affordable form of life insurance. It provides coverage for a specific 'term' of years. If the insured person passes away during this period, the death benefit is paid to the nominees.",
-    details: "Key benefits include high sum assured at low premiums, tax benefits under Section 80C, and financial security for your family's future liabilities like home loans or education.",
+    summary: "Term insurance pays a fixed sum to your nominee if you die during the policy period. You pay an annual premium; if you survive the full term, you receive nothing — this is intentional. Term insurance is income replacement, not investment.",
+    details: (
+      <div className="space-y-4">
+        <p>Per IRDAI regulations, the minimum sum assured under an individual term plan is Rs.25 lakh. Tax benefit: premiums qualify for Section 80C deduction up to Rs.1.5 lakh per year. The payout to your nominee is 100% tax-free under Section 10(10D) of the Income Tax Act.</p>
+        <p>The most important thing to disclose at purchase: your health conditions, smoking status, and all existing policies. Non-disclosure is the single largest cause of term insurance claim rejection.</p>
+      </div>
+    ),
     icon: (
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
         <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
@@ -16,8 +21,17 @@ const learningContent = [
   },
   {
     title: "What is Health Insurance",
-    summary: "Health insurance covers medical expenses arising from illnesses or injuries. It pays for hospitalization, day-care procedures, and sometimes pre and post-hospitalization costs.",
-    details: "Essential for protecting your savings against rising medical costs. Includes benefits like cashless treatment, No Claim Bonus (NCB), and tax savings under Section 80D.",
+    summary: "Health insurance reimburses your hospitalisation expenses up to the sum insured. Three things changed for buyers under IRDAI (Insurance Products) Regulations 2024 (effective 1 April 2024):",
+    details: (
+      <div className="space-y-4">
+        <div className="pl-4 space-y-2">
+          <p>1. Pre-existing disease (PED) waiting period is now capped at 36 months maximum. Previously some plans imposed 48 months.</p>
+          <p>2. Insurers cannot refuse health insurance based on age alone.</p>
+          <p>3. AYUSH treatment (Ayurveda, Yoga, Unani, Siddha, Homeopathy) must be covered up to the full sum insured.</p>
+        </div>
+        <p>Tax benefit: Premiums qualify for Section 80D deduction — up to Rs.25,000 for self/spouse/children, and an additional Rs.50,000 if your parents are senior citizens (60+).</p>
+      </div>
+    ),
     icon: (
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
         <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
@@ -26,8 +40,13 @@ const learningContent = [
   },
   {
     title: "How Motor Insurance Works",
-    summary: "Motor insurance protects your vehicle against damages from accidents, theft, fire, and natural disasters. It also covers third-party liabilities as mandated by law.",
-    details: "Third-party insurance is compulsory in India. Comprehensive insurance is recommended as it covers own-damage as well. Factors like IDV (Insured Declared Value) and NCB play a huge role in premiums.",
+    summary: "Under Section 146 of the Motor Vehicles Act, 1988, driving without valid third-party (TP) insurance is a criminal offence — fine of Rs.2,000 for first offence, Rs.4,000 for repeat.",
+    details: (
+      <div className="space-y-4">
+        <p>TP premium is fixed annually by IRDAI and is identical across all insurers. Indicative rates: cars under 1000cc approximately Rs.2,000-2,500/year; 1000-1500cc approximately Rs.3,200-3,900/year. These are IRDAI-notified figures — verify current rates at irdai.gov.in.</p>
+        <p>IDV (Insured Declared Value) is the current market value of your car and the maximum the insurer will pay on theft or total loss. A car is declared Constructive Total Loss when repair costs exceed 75% of IDV.</p>
+      </div>
+    ),
     icon: (
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
         <rect x="1" y="3" width="15" height="13" />
@@ -109,9 +128,9 @@ export default function InsuranceLearningCenter() {
                 >
                   <div className="overflow-hidden">
                     <div className="pt-4 border-t border-brand-ink/10">
-                      <p className="text-brand-ink text-sm font-medium leading-relaxed">
+                      <div className="text-brand-ink text-sm font-medium leading-relaxed">
                         {item.details}
-                      </p>
+                      </div>
                     </div>
                   </div>
                 </div>

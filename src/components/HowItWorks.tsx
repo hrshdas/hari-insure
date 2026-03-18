@@ -16,8 +16,8 @@ const steps = [
   {
     id: "step-2",
     step: "Step 2",
-    title: "Compare Policies",
-    desc: "Our engine fetches and ranks the best plans tailored to your profile — sorted by value.",
+    title: "Compare Plans",
+    desc: "Use our free educational guides to understand which features matter and what to look for in any plan.",
     cta: "View Plans",
     ctaHref: "#plans",
     img: "/investment-icon.png",

@@ -26,47 +26,42 @@ export default function PlanComparison() {
             This is an <strong>educational comparison</strong> — not a sales ranking. We compare key features that matter at claim time. Prices are indicative for a healthy 35-year-old individual.
           </p>
 
-          <div className="callout">
-            <p className="text-xs text-brand-muted"><strong>Disclaimer:</strong> Features and premiums change frequently. Always verify with the insurer&apos;s current policy document. Last updated: March 2026.</p>
+          <div className="callout mb-6">
+            <p className="text-sm text-brand-muted">
+              <em>Source for all data below: Published policy documents and Key Information Sheets. Last reviewed: March 2026. Always verify with the insurer before purchasing.</em>
+            </p>
           </div>
 
           <h2>Feature comparison — Top health plans 2026</h2>
-          <div style={{ overflowX: "auto" }}>
-            <table style={{ minWidth: "640px" }}>
+          <div className="overflow-x-auto mb-6 rounded-xl border border-gray-200">
+            <table className="w-full min-w-[800px] text-left border-collapse">
               <thead>
-                <tr>
-                  <th>Feature</th>
-                  <th>Plan A (Budget)</th>
-                  <th>Plan B (Mid-range)</th>
-                  <th>Plan C (Comprehensive)</th>
+                <tr className="bg-brand-ink text-white">
+                  <th className="p-3 border-r border-white/20">Feature</th>
+                  <th className="p-3 border-r border-white/20">HDFC ERGO Optima<br/>Secure</th>
+                  <th className="p-3 border-r border-white/20">Care Supreme<br/>(Reg:148)</th>
+                  <th className="p-3 border-r border-white/20">Niva Bupa Reassure<br/>2.0</th>
+                  <th className="p-3">ICICI Lombard Health<br/>Elite (Reg:115)</th>
                 </tr>
               </thead>
-              <tbody>
-                <tr><td><strong>Sum insured</strong></td><td>₹5L – ₹10L</td><td>₹10L – ₹25L</td><td>₹10L – ₹3Cr</td></tr>
-                <tr><td><strong>Room rent limit</strong></td><td>1% of SI/day</td><td>Single AC room</td><td>No limit</td></tr>
-                <tr><td><strong>Co-payment</strong></td><td>20% (age 61+)</td><td>None</td><td>None</td></tr>
-                <tr><td><strong>Pre-existing waiting</strong></td><td>4 years</td><td>3 years</td><td>3 years (2 yr add-on)</td></tr>
-                <tr><td><strong>Restoration</strong></td><td>Once/year</td><td>Unlimited</td><td>Unlimited, any illness</td></tr>
-                <tr><td><strong>Day care procedures</strong></td><td>300+</td><td>500+</td><td>All day care</td></tr>
-                <tr><td><strong>Disease sub-limits</strong></td><td>Yes (some)</td><td>None</td><td>None</td></tr>
-                <tr><td><strong>NCB</strong></td><td>10%/year, max 50%</td><td>25%/year, max 100%</td><td>50%/year, no cap</td></tr>
-                <tr><td><strong>Maternity</strong></td><td>Not available</td><td>Optional add-on</td><td>Included (3yr wait)</td></tr>
-                <tr><td><strong>OPD</strong></td><td>No</td><td>Optional add-on</td><td>Included</td></tr>
-                <tr><td><strong>Network hospitals</strong></td><td>7,000+</td><td>10,000+</td><td>12,000+</td></tr>
-                <tr><td><strong>Indicative premium (₹10L)</strong></td><td>₹7,000 – ₹9,000</td><td>₹10,000 – ₹14,000</td><td>₹14,000 – ₹20,000</td></tr>
+              <tbody className="bg-white">
+                <tr className="border-b"><td className="p-3 font-semibold border-r">Room Rent</td><td className="p-3 border-r">No restriction</td><td className="p-3 border-r">No restriction</td><td className="p-3 border-r">No restriction</td><td className="p-3">Tier-based</td></tr>
+                <tr className="border-b bg-gray-50"><td className="p-3 font-semibold border-r">Co-Payment</td><td className="p-3 border-r">None</td><td className="p-3 border-r">None (zone applies)</td><td className="p-3 border-r">None</td><td className="p-3">None</td></tr>
+                <tr className="border-b"><td className="p-3 font-semibold border-r">PED Waiting</td><td className="p-3 border-r">36 months</td><td className="p-3 border-r">48 months (verify)</td><td className="p-3 border-r">36 months</td><td className="p-3">24 months</td></tr>
+                <tr className="border-b bg-gray-50"><td className="p-3 font-semibold border-r">Disease Sub-Limits</td><td className="p-3 border-r">None</td><td className="p-3 border-r">None</td><td className="p-3 border-r">None</td><td className="p-3">None</td></tr>
+                <tr className="border-b"><td className="p-3 font-semibold border-r">Restoration</td><td className="p-3 border-r">Unlimited</td><td className="p-3 border-r">Unlimited auto-recharge</td><td className="p-3 border-r">Unlimited</td><td className="p-3">Unlimited reset</td></tr>
+                <tr className="border-b bg-gray-50"><td className="p-3 font-semibold border-r">NCB</td><td className="p-3 border-r">50%/yr max 100%</td><td className="p-3 border-r">50%/yr max 100%</td><td className="p-3 border-r">Up to 200%</td><td className="p-3">Up to 200%</td></tr>
+                <tr className="border-b"><td className="p-3 font-semibold border-r">AYUSH</td><td className="p-3 border-r">Full sum insured</td><td className="p-3 border-r">Full sum insured</td><td className="p-3 border-r">Full sum insured</td><td className="p-3">Full sum insured</td></tr>
+                <tr className="border-b bg-gray-50"><td className="p-3 font-semibold border-r">Pre-hospitalisation</td><td className="p-3 border-r">60 days</td><td className="p-3 border-r">60 days</td><td className="p-3 border-r">60 days</td><td className="p-3">60 days</td></tr>
+                <tr className="border-b"><td className="p-3 font-semibold border-r">Post-hospitalisation</td><td className="p-3 border-r">180 days</td><td className="p-3 border-r">180 days</td><td className="p-3 border-r">180 days</td><td className="p-3">90 days</td></tr>
+                <tr className="border-b bg-gray-50"><td className="p-3 font-semibold border-r">Air Ambulance</td><td className="p-3 border-r">Yes</td><td className="p-3 border-r">Up to Rs.5 lakh</td><td className="p-3 border-r">Yes</td><td className="p-3">Yes</td></tr>
               </tbody>
             </table>
           </div>
 
-          <h2>How to read this table</h2>
-          <p>
-            The &apos;budget&apos; plan costs less but has meaningful restrictions at claim time (room rent cap, co-pay for seniors, sub-limits). The &apos;comprehensive&apos; plan costs 2× more but gives far better coverage when it matters. The &apos;mid-range&apos; plan is often the sweet spot for most people.
-          </p>
-
-          <h2>What about the actual plan names?</h2>
-          <p>
-            We deliberately avoid naming specific plans because features change with policy updates. Use our <a href="/health/buying-checklist">12-point checklist</a> to evaluate any specific plan against these benchmarks. Talk to our advisors for personalised recommendation.
-          </p>
+          <div className="bg-blue-50 p-6 rounded-xl border border-blue-100 mb-8 text-brand-ink text-sm">
+            <strong>Disclaimer:</strong> This is a feature-level educational comparison based on publicly available policy documents. Hari Insurance does not sell any of these plans and is not affiliated with any of these insurers. Features and premiums change. Always verify with the insurer&apos;s current policy document or a licensed advisor before purchasing.
+          </div>
 
           <h2>Health insurance cost guide</h2>
           <p>Want to understand what health insurance typically costs across different ages and sum insured levels? See our <a href="/health/cost-guide">Health Insurance Cost Guide →</a></p>

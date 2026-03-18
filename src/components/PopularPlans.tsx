@@ -7,6 +7,7 @@ const plans = [
     label: "Health\nInsurance",
     iconColor: "#16a37f",
     iconBg: "transparent",
+    href: "/health",
     icon: (
       <Image src="/health-icon.png" alt="Health Insurance" width={100} height={100} className="object-contain" />
     ),
@@ -16,6 +17,7 @@ const plans = [
     label: "Term\nInsurance",
     iconColor: "#f97316",
     iconBg: "transparent",
+    href: "/term",
     icon: (
       <Image src="/term-icon.png" alt="Term Insurance" width={100} height={100} className="object-contain" />
     ),
@@ -25,6 +27,7 @@ const plans = [
     label: "Life\nInsurance",
     iconColor: "#2563eb",
     iconBg: "transparent",
+    href: "/term",
     icon: (
       <Image src="/life-icon.png" alt="Life Insurance" width={100} height={100} className="object-contain" />
     ),
@@ -34,6 +37,7 @@ const plans = [
     label: "Family\nHealth",
     iconColor: "#9333ea",
     iconBg: "transparent",
+    href: "/health/for-family",
     icon: (
       <Image src="/family-health-icon.png" alt="Family Health" width={100} height={100} className="object-contain" />
     ),
@@ -43,6 +47,7 @@ const plans = [
     label: "Individual\nHealth",
     iconColor: "#16a37f",
     iconBg: "transparent",
+    href: "/health/for-myself",
     icon: (
       <Image src="/individual-health-icon.png" alt="Individual Health" width={100} height={100} className="object-contain" />
     ),
@@ -52,6 +57,7 @@ const plans = [
     label: "Investment\nPlans",
     iconColor: "#f97316",
     iconBg: "transparent",
+    href: "/term/vs-endowment-ulip",
     icon: (
       <Image src="/investment-icon.png" alt="Investment Plans" width={100} height={100} className="object-contain" />
     ),
@@ -61,6 +67,7 @@ const plans = [
     label: "Senior\nCitizen",
     iconColor: "#2563eb",
     iconBg: "transparent",
+    href: "/health/for-parents",
     icon: (
       <Image src="/senior-icon.png" alt="Senior Citizen" width={100} height={100} className="object-contain" />
     ),
@@ -70,6 +77,7 @@ const plans = [
     label: "Critical\nIllness",
     iconColor: "#9333ea",
     iconBg: "transparent",
+    href: "/health/concepts#critical-illness",
     icon: (
       <Image src="/critical-icon.png" alt="Critical Illness" width={100} height={100} className="object-contain" />
     ),
@@ -79,6 +87,7 @@ const plans = [
     label: "Health Top\nUp",
     iconColor: "#16a37f",
     iconBg: "transparent",
+    href: "/health/concepts#restoration",
     icon: (
       <Image src="/topup-icon.png" alt="Health Top Up" width={100} height={100} className="object-contain" />
     ),
@@ -88,6 +97,7 @@ const plans = [
     label: "Car\nInsurance",
     iconColor: "#f97316",
     iconBg: "transparent",
+    href: "/motor",
     icon: (
       <Image src="/car-icon.png" alt="Car Insurance" width={100} height={100} className="object-contain" />
     ),
@@ -97,6 +107,7 @@ const plans = [
     label: "Bike\nInsurance",
     iconColor: "#2563eb",
     iconBg: "transparent",
+    href: "/motor",
     icon: (
       <Image src="/bike-icon.png" alt="Bike Insurance" width={100} height={100} className="object-contain" />
     ),
@@ -106,6 +117,7 @@ const plans = [
     label: "Maternity\nHealth",
     iconColor: "#9333ea",
     iconBg: "transparent",
+    href: "/health/maternity",
     icon: (
       <Image src="/maternity-icon.png" alt="Maternity Health" width={100} height={100} className="object-contain" />
     ),
@@ -130,7 +142,7 @@ export default function PopularPlans() {
           {plans.map((plan) => (
             <Link
               key={plan.id}
-              href="#cta"
+              href={plan.href}
               id={`${plan.id}-btn`}
               className="group flex flex-col items-center justify-center gap-2 bg-white rounded-2xl border border-gray-100 p-3 aspect-square hover:shadow-md hover:-translate-y-1 transition-all duration-200"
               style={{ boxShadow: "0 1px 6px rgba(0,0,0,0.06)" }}

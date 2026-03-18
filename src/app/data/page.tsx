@@ -22,7 +22,7 @@ export default function DataPillarPage() {
         <PillarLanding
           pillar="Data & Comparisons"
           tagline="Objective data straight from IRDAI reports"
-          description="We do not sell data. We extract the hard numbers from dense regulatory reports and present them clearly so you can choose the right insurer."
+          description="We do not sell data. We extract the hard numbers from dense regulatory reports and present them clearly so you can choose the right insurer. Source: IRDAI Handbook on Indian Insurance Statistics 2023-24, released March 2025. Verify at irdai.gov.in"
           color="#0d3d35"
           bg="#f5f0e8"
           icon={dataIcon}
@@ -31,8 +31,8 @@ export default function DataPillarPage() {
               level: "start",
               items: [
                 { label: "Claim Settlement Ratio (CSR) Explained", href: "/data/csr-explained", desc: "Why high CSR isn't always good" },
-                { label: "Health Insurer CSR Data (2025-26)", href: "/data/health-csr" },
-                { label: "Life Insurer CSR Data (2025-26)", href: "/data/life-csr" },
+                { label: "Life & Health Insurance Claim Data (FY 2023-24) — IRDAI Official", href: "/data/health-csr" },
+                { label: "Life Insurance CSR Data (FY 2023-24) — IRDAI Official", href: "/data/life-csr" },
               ],
             },
             {

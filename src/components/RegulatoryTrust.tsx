@@ -2,8 +2,8 @@
 
 const trustItems = [
   {
-    title: "IRDAI Regulated",
-    description: "Hari Insurance operates under strict guidelines set by the Insurance Regulatory and Development Authority of India (IRDAI), ensuring your interests are always protected.",
+    title: "Based on IRDAI Official Data",
+    description: "All claim settlement ratios, regulatory information, and policy data on this site are sourced from IRDAI's official publications — Annual Reports and the Handbook on Indian Insurance Statistics. We cite the source and year for every data point.",
     icon: (
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
         <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
@@ -11,8 +11,8 @@ const trustItems = [
     ),
   },
   {
-    title: "CSR Importance",
-    description: "We help you choose insurers with high Claim Settlement Ratios, ensuring that the promise of a claim payout is honored when you need it most.",
+    title: "Your Consumer Rights Under IRDAI",
+    description: "IRDAI guarantees you: lifelong policy renewability, a 30-day free look period, portability without waiting period loss, claim settlement within 30 days, and free Ombudsman dispute resolution. We explain how to use every one of these rights.",
     icon: (
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
         <circle cx="12" cy="12" r="10" />
@@ -22,8 +22,8 @@ const trustItems = [
     ),
   },
   {
-    title: "Consumer Protection",
-    description: "Our platform provides ombudsman support and grievance redressal guidance, standing by you through the entire lifecycle of your policy.",
+    title: "We Don't Sell. We Educate.",
+    description: "Hari Insurance does not sell policies, earn commissions, or have any financial relationship with any insurer. Our advisor connections are to IRDAI-licensed independent advisors. We make money only if you choose to speak with an advisor — never by pushing a particular product.",
     icon: (
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
         <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
