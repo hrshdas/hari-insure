@@ -44,7 +44,7 @@ export default function Footer() {
             <ul className="space-y-3">
               <li><Link href="/about" className="text-white/40 hover:text-white transition-colors text-sm">About Us</Link></li>
               <li><Link href="/talk-to-advisor" className="text-brand-green hover:text-white transition-colors font-medium text-sm">Talk to a Licensed Advisor</Link></li>
-              <li><span className="text-white/40 text-sm block mt-2">hello@hariinsurance.in</span></li>
+              <li><a href="mailto:sethimanad@gmail.com" className="text-white/40 hover:text-white transition-colors text-sm block mt-2">sethimanad@gmail.com</a></li>
             </ul>
           </div>
 
