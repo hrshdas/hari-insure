@@ -4,8 +4,8 @@ import { useState } from "react";
 
 const faqs = [
     {
-        q: <>What types of insurance does <span className="font-bold text-black">Hari </span><span className="font-bold text-brand-green">Insurance</span> offer?</>,
-        a: "Hari Insurance offers a comprehensive range of policies including Health Insurance, Life Insurance, Term Plans, Motor Insurance, Family Floater Plans, and Investment-linked plans — all from India's top insurers.",
+        q: <>What does <span className="font-bold text-black">Hari </span><span className="font-bold text-brand-green">Insurance</span> do?</>,
+        a: "Hari Insurance is an independent insurance advisory platform. We don't sell policies directly — instead, we help you compare plans from India's top insurers, understand your coverage needs, and make informed decisions with guidance from licensed advisors.",
     },
     {
         q: "How do I choose the right insurance plan for my family?",
