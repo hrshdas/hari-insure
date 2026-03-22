@@ -8,7 +8,6 @@ import ComplianceDisclaimer from "@/components/ComplianceDisclaimer";
 
 import PopularPlans from "@/components/PopularPlans";
 import HariAdvantage from "@/components/HariAdvantage";
-import HowItWorks from "@/components/HowItWorks";
 import FAQSection from "@/components/FAQSection";
 import CTASection from "@/components/CTASection";
 import Footer from "@/components/Footer";
@@ -22,16 +21,14 @@ export default function Home() {
         <HeroSection />
 
         <InsuranceLearningCenter />
-        <FeaturedPlans />
+        <PopularPlans />
         <InsuranceCostGuide />
+        <FeaturedPlans />
         <RegulatoryTrust />
         <ComplianceDisclaimer />
 
-        <PopularPlans />
         <HariAdvantage />
-        <HowItWorks />
         <FAQSection />
-        <CTASection />
 
         <section className="bg-brand-green-light/30 py-16 border-t border-brand-green/10">
           <div className="max-w-7xl mx-auto px-6 lg:px-8">
@@ -46,8 +43,11 @@ export default function Home() {
             <LeadForm variant="large" />
           </div>
         </section>
+
+        <CTASection />
       </main>
       <Footer />
     </>
   );
 }
+

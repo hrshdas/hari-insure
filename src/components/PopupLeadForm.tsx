@@ -9,11 +9,8 @@ export default function PopupLeadForm() {
   const pathname = usePathname();
 
   useEffect(() => {
-    // Don't show popup on the glossary page
-    if (pathname === "/glossary") {
-      return;
-    }
-
+    // Reset and show popup on every page visit
+    setIsOpen(false);
     const timer = setTimeout(() => {
       setIsOpen(true);
     }, 8000);

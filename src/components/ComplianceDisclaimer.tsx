@@ -20,7 +20,7 @@ export default function ComplianceDisclaimer() {
           
           <div className="mt-8 text-center">
             <p className="text-xs text-brand-muted/70">
-              &copy; {new Date().getFullYear()} <strong>Hari</strong><span className="text-brand-green font-bold">Insurance</span>. All rights reserved. | Licensed Information Partner
+              &copy; {new Date().getFullYear()} <strong>Hari</strong><span className="text-brand-green font-bold">Insurance</span>. All rights reserved.
             </p>
           </div>
         </div>
