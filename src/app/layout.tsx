@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Nunito, Inter } from "next/font/google";
 import "./globals.css";
-
+import PopupLeadForm from "@/components/PopupLeadForm";
 const nunito = Nunito({
   subsets: ["latin"],
   weight: ["800"],
@@ -66,7 +66,10 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/favicon.ico" />
       </head>
-      <body className={`antialiased ${nunito.variable} ${inter.variable}`}>{children}</body>
+      <body className={`antialiased ${nunito.variable} ${inter.variable}`}>
+        {children}
+        <PopupLeadForm />
+      </body>
     </html>
   );
 }

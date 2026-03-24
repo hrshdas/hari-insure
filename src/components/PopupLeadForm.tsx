@@ -13,7 +13,7 @@ export default function PopupLeadForm() {
     setIsOpen(false);
     const timer = setTimeout(() => {
       setIsOpen(true);
-    }, 8000);
+    }, 4000);
 
     return () => clearTimeout(timer);
   }, [pathname]);
