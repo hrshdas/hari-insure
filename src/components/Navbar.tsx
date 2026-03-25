@@ -37,10 +37,8 @@ export default function Navbar() {
           
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3 group flex-shrink-0" aria-label="Hari Insurance India Home">
-            <div className="w-9 h-9 rounded-[10px] bg-gradient-to-br from-brand-green to-blue-500 flex items-center justify-center shadow-md transition-transform group-hover:scale-105">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                <path d="M12 2L3 7v5c0 5.25 3.75 10.15 9 11.35C17.25 22.15 21 17.25 21 12V7L12 2z" fill="white" fillOpacity="0.95"/>
-              </svg>
+            <div className="w-10 h-10 flex items-center justify-center transition-transform group-hover:scale-105">
+              <img src="/logo.png" alt="Hari Insurance Logo" className="w-full h-full object-contain" />
             </div>
             <span className="text-[19px] font-bold tracking-tight text-gray-900">
               Hari<span className="text-brand-green">Insurance</span>

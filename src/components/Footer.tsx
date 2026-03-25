@@ -8,6 +8,9 @@ export default function Footer() {
           
           <div className="lg:col-span-2">
             <Link href="/" className="inline-flex items-center gap-2.5 mb-5 pb-1" aria-label="Hari Insurance India">
+              <div className="w-10 h-10 flex items-center justify-center bg-white rounded-[10px] p-1">
+                <img src="/logo.png" alt="Hari Insurance Logo" className="w-full h-full object-contain" />
+              </div>
               <span className="text-2xl font-bold font-outfit tracking-tight">
                 <span className="text-white">Hari</span><span className="text-brand-green">Insurance</span>
               </span>
