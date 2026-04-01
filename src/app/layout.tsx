@@ -33,6 +33,13 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Hari Insurance" }],
   creator: "Hari Insurance",
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/logo.png", type: "image/png", sizes: "512x512" },
+    ],
+    apple: "/logo.png",
+  },
   openGraph: {
     type: "website",
     locale: "en_IN",
@@ -40,11 +47,13 @@ export const metadata: Metadata = {
     title: "Hari Insurance — Smart Insurance Comparison",
     description: "Compare & buy insurance plans tailored for your lifestyle.",
     siteName: "Hari Insurance",
+    images: [{ url: "/logo.png" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Hari Insurance — Smart Insurance Comparison",
     description: "Compare & buy insurance plans tailored for your lifestyle.",
+    images: ["/logo.png"],
   },
   robots: {
     index: true,
@@ -64,7 +73,9 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <head>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="icon" href="/logo.png" type="image/png" sizes="512x512" />
+        <link rel="apple-touch-icon" href="/logo.png" />
       </head>
       <body className={`antialiased ${nunito.variable} ${inter.variable}`}>
         {children}

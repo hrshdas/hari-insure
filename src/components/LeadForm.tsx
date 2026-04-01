@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 
-const FORMSPREE_URL = "https://formspree.io/f/xeojkjla"; // reuse existing endpoint
+const FORMSPREE_URL = "https://formspree.io/f/mreoloza"; // reuse existing endpoint
 
 interface LeadFormProps {
   variant?: "sidebar" | "large";
@@ -39,8 +39,8 @@ export default function LeadForm({ variant = "sidebar", className = "" }: LeadFo
 
   const isLarge = variant === "large";
 
-  const containerBaseClass = isLarge 
-    ? "rounded-3xl border border-brand-green/20 bg-white p-10 md:p-14 shadow-xl max-w-5xl mx-auto" 
+  const containerBaseClass = isLarge
+    ? "rounded-3xl border border-brand-green/20 bg-white p-10 md:p-14 shadow-xl max-w-5xl mx-auto"
     : "rounded-2xl border border-brand-green/20 bg-white p-6 sticky top-24 shadow-md";
 
   return (
@@ -50,7 +50,7 @@ export default function LeadForm({ variant = "sidebar", className = "" }: LeadFo
         <div className={`flex items-center ${isLarge ? 'gap-5 mb-4' : 'gap-2.5'}`}>
           <div className={`${isLarge ? 'w-16 h-16' : 'w-9 h-9'} rounded-xl bg-green-gradient flex items-center justify-center flex-shrink-0`}>
             <svg width={isLarge ? "28" : "16"} height={isLarge ? "28" : "16"} viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2.2" strokeLinecap="round" aria-hidden="true">
-              <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+              <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
             </svg>
           </div>
           <div>
@@ -68,7 +68,7 @@ export default function LeadForm({ variant = "sidebar", className = "" }: LeadFo
         <div className={`text-center ${isLarge ? 'py-10' : 'py-5'}`}>
           <div className={`${isLarge ? 'w-16 h-16' : 'w-10 h-10'} rounded-full bg-brand-green-light flex items-center justify-center mx-auto mb-4`}>
             <svg width={isLarge ? "32" : "18"} height={isLarge ? "32" : "18"} viewBox="0 0 24 24" fill="none" stroke="#16a37f" strokeWidth="2.5" strokeLinecap="round">
-              <path d="M20 6L9 17l-5-5"/>
+              <path d="M20 6L9 17l-5-5" />
             </svg>
           </div>
           <p className={`${isLarge ? 'text-xl' : 'text-sm'} font-semibold text-brand-ink`}>We&apos;ll call you shortly!</p>
